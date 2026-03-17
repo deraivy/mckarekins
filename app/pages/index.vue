@@ -216,17 +216,18 @@
             that respect both animals and the land.
           </p>
 
-          <p class="text-lg text-black leading-relaxed">
+          <p class="text-lg text-black leading-relaxed mb-6">
             From cattle and goats to poultry, catfish ponds, and extensive
             cassava and maize fields, every corner of our farm is carefully
             managed.
           </p>
 
-          <button
-            class="bg-primary hover:bg-secondary text-white py-2.5 px-4 rounded-full mt-4"
+          <NuxtLink
+            to="/about"
+            class="bg-primary hover:bg-secondary text-white py-2.5 px-6 rounded-full mt-12"
           >
             Learn More →
-          </button>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -234,13 +235,8 @@
     <!-- What We Offer -->
     <section class="bg-[#ede3ce] py-32">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 gap-8">
-        <div class="flex items-center space-x-2 mb-2">
-          <div class="border border-amber-700 w-12" />
-          <h2 class="uppercase text-amber-700">What We Offer</h2>
-        </div>
-
-        <h2 class="text-4xl md:text-5xl mb-8 font-semibold">
-          Full-Cycle Farm Operations
+        <h2 class="text-4xl md:text-5xl mb-8 font-semibold text-center">
+          Our Services
         </h2>
 
         <!-- Cards -->
@@ -254,7 +250,7 @@
               >
                 <Icon
                   name="healthicons:animal-chicken-outline"
-                  class="w-10 h-10 text-amber-700"
+                  class="w-10 h-10 text-secondary"
                 />
               </div>
               <h3 class="text-xl font-semibold mb-2">Poultry Farming</h3>
@@ -275,7 +271,7 @@
               >
                 <Icon
                   name="famicons:fish-outline"
-                  class="w-10 h-10 text-amber-700"
+                  class="w-10 h-10 text-secondary"
                 />
               </div>
               <h3 class="text-xl font-semibold mb-2">Sustainable Farming</h3>
@@ -293,7 +289,7 @@
               <div
                 class="bg-[#f2e2cd] w-14 h-14 p-2.5 rounded-lg shadow-inner mb-2"
               >
-                <Icon name="ph:plant" class="w-10 h-10 text-amber-700" />
+                <Icon name="ph:plant" class="w-10 h-10 text-secondary" />
               </div>
               <h3 class="text-xl font-semibold mb-2">Sustainable Farming</h3>
               <p class="text-gray-600">
@@ -313,85 +309,69 @@
       ></div>
       <div class="max-w-7xl mx-auto relative z-10">
         <div class="text-center mb-16">
-          <div class="section-badge">💬 Testimonials</div>
-          <h2
-            class="font-display text-cream text-4xl md:text-5xl font-bold mt-3"
-          >
+          <!-- <div class="flex items-center space-x-2 mb-2">
+            <div class="border border-amber-700 w-12" />
+            <h2 class="uppercase text-secondary">What We Offer</h2>
+          </div> -->
+          <h2 class="text-4xl md:text-5xl font-bold mt-3">
             What Our <em class="text-sun not-italic">Clients</em> Say
           </h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
           <div
-            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl p-8 shadow-lg card-lift"
+            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
           >
-            <div class="quote-mark">"</div>
-            <p class="text-cream/85 text-sm leading-relaxed -mt-6">
+            <p class="leading-relaxed">
               GreenRoot supplied our restaurant with fresh catfish every week
               for two years. The quality is unmatched and delivery is always on
               time. Highly recommend!
             </p>
             <div class="mt-6 flex items-center gap-3">
               <div
-                class="w-10 h-10 rounded-full bg-gradient-to-br from-harvest to-sun flex items-center justify-center text-lg"
-              >
-                👨
-              </div>
+                class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg"
+              ></div>
               <div>
-                <div class="font-display text-cream font-bold text-sm">
-                  Chukwuemeka O.
-                </div>
-                <div class="text-cream/50 text-xs">Restaurant Owner, Lagos</div>
+                <div class="font-bold">Chukwuemeka O.</div>
+                <div class="text-sm">Restaurant Owner, Lagos</div>
               </div>
             </div>
           </div>
 
           <div
-            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl p-8 shadow-lg card-lift"
+            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
           >
-            <div class="quote-mark">"</div>
-            <p class="text-cream/85 text-sm leading-relaxed -mt-6">
+            <p class="leading-relaxed">
               I started my own poultry farm after their advisory workshop. The
               support and training I received was practical and life-changing.
               My farm is thriving!
             </p>
             <div class="mt-6 flex items-center gap-3">
               <div
-                class="w-10 h-10 rounded-full bg-gradient-to-br from-leaf to-sprout flex items-center justify-center text-lg"
-              >
-                👩
-              </div>
+                class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg"
+              ></div>
               <div>
-                <div class="font-display text-cream font-bold text-sm">
-                  Aisha M.
-                </div>
-                <div class="text-cream/50 text-xs">New Farmer, Kaduna</div>
+                <div class="font-bold">Aisha M.</div>
+                <div class="text-sm">New Farmer, Kaduna</div>
               </div>
             </div>
           </div>
 
           <div
-            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl p-8 shadow-lg card-lift"
+            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
           >
-            <div class="quote-mark">"</div>
-            <p class="text-cream/85 text-sm leading-relaxed -mt-6">
+            <p class="leading-relaxed">
               We source all our cassava tubers and garri from GreenRoot. Their
               bulk pricing is fair and the produce is always clean and fresh.
               Great partnership!
             </p>
             <div class="mt-6 flex items-center gap-3">
               <div
-                class="w-10 h-10 rounded-full bg-gradient-to-br from-clay to-harvest flex items-center justify-center text-lg"
-              >
-                👨
-              </div>
+                class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg"
+              ></div>
               <div>
-                <div class="font-display text-cream font-bold text-sm">
-                  Babatunde A.
-                </div>
-                <div class="text-cream/50 text-xs">
-                  Food Distributor, Ibadan
-                </div>
+                <div class="font-bold">Babatunde A.</div>
+                <div class="text-sm">Food Distributor, Ibadan</div>
               </div>
             </div>
           </div>
@@ -543,13 +523,11 @@ const onSlideChange = (swiper) => {
 
 // Marquee items
 const marqueeItems = [
-  "🐄 Beef Cattle",
-  "🐔 Layer Hens",
-  "🐟 Catfish & Tilapia",
-  "🌿 Cassava Farming",
-  "🌽 Maize & Sorghum",
-  "🐖 Pig Rearing",
-  "🥚 Fresh Eggs Daily",
+  "Layer Hens",
+  "Catfish ",
+  "Broiler Chickens",
+  "Cassava Farming",
+  "Fresh Eggs Daily",
 ];
 </script>
 
