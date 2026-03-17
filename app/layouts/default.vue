@@ -17,10 +17,9 @@
             </div>
             <div>
               <span
-                class="font-display font-black text-cream text-xl leading-none block"
-                >GreenRoot</span
+                class="font-sans font-black text-cream text-xl leading-none block"
+                >Mc Kareins</span
               >
-              <span class="font-hand text-sun text-sm leading-none">Farms</span>
             </div>
           </NuxtLink>
 
