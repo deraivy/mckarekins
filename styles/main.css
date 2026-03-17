@@ -1,0 +1,139 @@
+body {
+  background-color: #f0ead6;
+}
+
+.mini-tag {
+  @apply pointer-events-auto; /* allow interaction if needed */
+  @apply inline-flex items-center justify-center px-5 py-2 text-xs md:text-sm font-semibold tracking-wide
+           text-white bg-white/30 backdrop-blur-2xl rounded-full shadow-xl
+           border-2 border-white/60
+           whitespace-nowrap transition-all duration-500;
+
+  /* Double border / glow effect */
+  box-shadow:
+    0 0 0 4px rgba(255, 255, 255, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.group:hover .mini-tag {
+  @apply scale-110 bg-white/45 border-white/85 shadow-2xl;
+  box-shadow:
+    0 0 0 6px rgba(255, 255, 255, 0.28),
+    0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+:deep(.swiper) {
+  overflow: visible !important;
+}
+
+:deep(.swiper-slide) {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+:deep(.swiper-button-prev),
+:deep(.swiper-button-next) {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+:deep(.swiper-button-prev:hover),
+:deep(.swiper-button-next:hover) {
+  background: rgba(232, 207, 160, 0.2);
+  transform: scale(1.1);
+}
+
+:deep(.swiper-button-prev::after),
+:deep(.swiper-button-next::after) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+:deep(.swiper-button-prev) {
+  left: -20px;
+}
+
+:deep(.swiper-button-next) {
+  right: -20px;
+}
+
+:deep(.swiper-pagination) {
+  bottom: -30px !important;
+}
+
+:deep(.swiper-pagination-bullet) {
+  background: #d4c0a0;
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+:deep(.swiper-pagination-bullet-active) {
+  background: #e8cfa0;
+  opacity: 1;
+  width: 30px;
+  border-radius: 5px;
+}
+
+/* Badge animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 3.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+/* Badge transitions */
+.badge-enter-active,
+.badge-leave-active {
+  transition: all 0.5s ease;
+}
+
+.badge-enter-from,
+.badge-leave-to {
+  opacity: 0;
+  transform: scale(0.8) translateY(10px);
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
