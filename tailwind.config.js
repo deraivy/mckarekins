@@ -14,9 +14,9 @@ export default {
         primary: "#1c3d27",
         secondary: "#2a4a35",
         accent: "#e8cfa0",
-        accentTint: "#ede3ce",
         divider: "#d4c0a0",
-        // "#f0ead6"
+        soil: "#1c3d27",
+        clay: "#d4c0a0",
       },
 
       fontFamily: {

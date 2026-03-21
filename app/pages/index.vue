@@ -1,10 +1,5 @@
 <template>
-  <div class="min-h-screen relative overflow-hidden">
-    <!-- Background texture -->
-    <!-- <div
-      class="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%221%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]"
-    ></div> -->
-
+  <div class="min-h-screen">
     <!-- Hero -->
     <div class="bg-gradient-to-br from-primary via-[#234d32] to-secondary">
       <div
@@ -21,7 +16,7 @@
               <span
                 class="w-2 h-2 rounded-full bg-[#4ade80] animate-pulse"
               ></span>
-              Sustainable Agriculture Since 2019
+              Sustainable Agriculture Since 2022
             </div>
 
             <h1
@@ -114,7 +109,7 @@
             >
               <swiper-slide v-for="(slide, index) in slides" :key="index">
                 <div
-                  class="relative aspect-square rounded-full overflow-hidden shadow-2xl border-4 border-white/20 group"
+                  class="relative aspect-square rounded-full overflow-hidden border-4 border-white/20 group"
                 >
                   <img
                     :src="slide.image"
@@ -197,128 +192,218 @@
     </div>
 
     <!-- Organic Farming -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 gap-8">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-        <NuxtImg
-          src="/images/cassava.jpg"
-          alt="Organic farming leaf"
-          class="w-full object-cover rounded-2xl shadow-lg"
-        />
+        <!-- Video -->
+        <div class="relative rounded-2xl overflow-hidden group">
+          <NuxtImg
+            src="/images/cassavaw.jpg"
+            class="w-full h-[530px] object-cover transition-transform duration-700 group-hover:scale-105"
+          />
 
-        <div>
-          <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-4">
-            Organic Farming
+          <div
+            class="absolute bottom-5 left-5 bg-[#1c3d27]/90 backdrop-blur-sm border border-[#e8cfa0]/20 rounded-full px-4 py-3 flex items-center gap-3"
+          >
+            <span
+              class="text-[#e8cfa0] text-xs font-bold tracking-widest uppercase"
+              >Active Farm — Epe, Lagos</span
+            >
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex flex-col">
+          <p
+            class="text-xs font-bold tracking-widest uppercase text-amber-600 mb-3"
+          >
+            Our Story
+          </p>
+
+          <h2
+            class="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-bold leading-tight mb-6"
+          >
+            Farming with Purpose, Rooted in Lagos
           </h2>
 
-          <p class="text-lg text-black leading-relaxed mb-2">
-            GreenRoot Farms was founded with a single mission: to produce
-            high-quality food sustainably, using responsible farming practices
-            that respect both animals and the land.
-          </p>
+          <div class="space-y-6">
+            <p class="leading-relaxed text-base md:text-lg text-primary">
+              Kinse Farms is nestled in the heart of Epe, Lagos one of Nigeria's
+              most fertile farming regions. Founded with a clear mission: to
+              drive economic growth, build agricultural capacity, create jobs,
+              and eradicate poverty through sustainable farming. Though we have
+              been farming for over a decade, the business was formally
+              incorporated by the Corporate Affairs Commission in May 2016.
+            </p>
 
-          <p class="text-lg text-black leading-relaxed mb-6">
-            From cattle and goats to poultry, catfish ponds, and extensive
-            cassava and maize fields, every corner of our farm is carefully
-            managed.
-          </p>
+            <p class="leading-relaxed text-base md:text-lg text-primary">
+              Today, every corner of our farm is carefully managed — from our
+              cattle, goats, and poultry to our thriving catfish ponds and
+              expansive cassava fields. We don't just grow food; we grow
+              opportunities for the communities around us.
+            </p>
 
-          <NuxtLink
-            to="/about"
-            class="bg-primary hover:bg-secondary text-white py-2.5 px-6 rounded-full mt-12"
-          >
-            Learn More →
-          </NuxtLink>
+            <div class="flex items-center gap-4">
+              <NuxtLink
+                to="/about"
+                class="bg-[#1c3d27] hover:bg-[#2a4a35] text-[#e8cfa0] font-semibold text-sm py-3 px-7 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+              >
+                Learn More About Us →
+              </NuxtLink>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- What We Offer -->
-    <section class="bg-[#ede3ce] py-32">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 gap-8">
-        <h2 class="text-4xl md:text-5xl mb-8 font-semibold text-center">
-          Our Services
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="text-center mb-12">
+        <p
+          class="text-sm font-bold tracking-widest uppercase text-amber-600 mb-3"
+        >
+          What we offer
+        </p>
+        <h2
+          class="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-bold leading-tight mb-4 max-w-lg mx-auto"
+        >
+          Our Products
         </h2>
+        <p
+          class="text-lg leading-relaxed max-w-3xl mx-auto text-secondary/90 font-sans"
+        >
+          We integrate crops, livestock, aquaculture, and value addition to
+          recycle resources, increase yields, diversify income, and strengthen
+          food security across Nigeria.
+        </p>
+      </div>
 
-        <!-- Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div
-            class="bg-[#f6efdf] shadow-xl border border-border-amber-600 rounded-2xl"
-          >
-            <div class="p-6">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6 mt-12 px-4 md:px-8"
+      >
+        <div
+          v-for="service in services"
+          :key="service.title"
+          class="service-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+          :style="{ background: service.background }"
+        >
+          <div class="p-6 h-full flex flex-col relative">
+            <!-- Overlay gradient for better text contrast -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent pointer-events-none"
+            ></div>
+
+            <div class="relative z-10">
+              <!-- Icon container -->
               <div
-                class="bg-[#f2e2cd] w-14 h-14 p-2.5 rounded-lg shadow-inner mb-2"
+                class="w-16 h-16 p-3 rounded-xl flex items-center justify-center mb-5 backdrop-blur-sm bg-white/15 border border-white/25 shadow-inner group-hover:bg-white/25 transition-colors duration-300"
               >
-                <Icon
-                  name="healthicons:animal-chicken-outline"
-                  class="w-10 h-10 text-secondary"
+                <NuxtImg
+                  :src="service.icon"
+                  class="w-10 h-10 text-white drop-shadow-md"
                 />
               </div>
-              <h3 class="text-xl font-semibold mb-2">Poultry Farming</h3>
-              <p class="text-gray-600">
-                Free-range chickens raised on natural feed. We supply live
-                birds, dressed chicken, and fresh eggs to households and markets
-                daily.
+
+              <!-- Title -->
+              <h3
+                class="text-2xl font-bold mb-3 text-white tracking-tight drop-shadow-md group-hover:text-white transition-colors"
+              >
+                {{ service.title }}
+              </h3>
+
+              <!-- Description -->
+              <p class="text-lg text-white/90 leading-relaxed drop-shadow-sm">
+                {{ service.description }}
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div
-            class="bg-[#f6efdf] shadow-xl border border-gray-200 rounded-2xl border-t-2 border-transparent service-card"
+    <!-- Why Choose Us -->
+    <section class="py-16 sm:py-24 bg-[#faf7f0]">
+      <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-14">
+          <p
+            class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-700 mb-3"
           >
-            <div class="p-6">
-              <div
-                class="bg-[#f2e2cd] w-14 h-14 p-2.5 rounded-lg shadow-inner mb-2"
-              >
-                <Icon
-                  name="famicons:fish-outline"
-                  class="w-10 h-10 text-secondary"
-                />
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Sustainable Farming</h3>
-              <p class="text-gray-600">
-                We prioritize eco-friendly practices to ensure a healthier
-                planet for future generations.
-              </p>
-            </div>
-          </div>
+            Why Choose Us
+          </p>
 
-          <div
-            class="bg-[#f6efdf] shadow-xl border border-border-amber-600 rounded-2xl"
+          <h2
+            class="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-bold max-w-md mx-auto leading-tight mb-4"
           >
-            <div class="p-6">
-              <div
-                class="bg-[#f2e2cd] w-14 h-14 p-2.5 rounded-lg shadow-inner mb-2"
-              >
-                <Icon name="ph:plant" class="w-10 h-10 text-secondary" />
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Sustainable Farming</h3>
-              <p class="text-gray-600">
-                Cassava, maize, plantain, and vegetables grown with organic
-                fertilizers. From planting to harvest, done right every season.
-              </p>
+            The Farm That Never Cuts Corners
+          </h2>
+
+          <p
+            class="text-sm sm:text-base text-[#2a4a35]/70 leading-relaxed max-w-xl mx-auto"
+          >
+            We combine traditional farming experience with modern practices to
+            deliver quality you can trust every time.
+          </p>
+        </div>
+
+        <!-- Bottom Pillars -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
+          <div
+            v-for="(pillar, index) in pillars"
+            :key="pillar.title"
+            class="bg-white border border-[#d4c0a0]/50 rounded-2xl p-6 relative overflow-hidden hover:shadow-md hover:scale-[1.02] transition-all duration-300"
+          >
+            <!-- Number -->
+            <div
+              class="absolute top-3 right-5 font-serif text-5xl font-bold text-[#1c3d27]/20 leading-none select-none"
+            >
+              {{ String(index + 1).padStart(2, "0") }}
             </div>
+
+            <!-- Accent line -->
+            <div
+              class="w-10 h-[3px] rounded-full mb-8"
+              :style="{ background: pillar.lineColor }"
+            ></div>
+
+            <!-- Title -->
+            <h4 class="text-xl font-semibold text-[#1c3d27] mb-2">
+              {{ pillar.title }}
+            </h4>
+
+            <!-- Description -->
+            <p class="text-base text-[#2a4a35]/70 leading-relaxed mb-5">
+              {{ pillar.description }}
+            </p>
+
+            <!-- Tag -->
+            <span
+              class="inline-block text-xs font-semibold px-3 py-1 rounded-full"
+              :style="{ background: pillar.tagBg, color: pillar.tagColor }"
+            >
+              {{ pillar.tag }}
+            </span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-32 px-6 md:px-16 relative overflow-hidden">
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-white/5 blur-3xl pointer-events-none"
-      ></div>
+    <section class="py-32 px-6 md:px-16">
       <div class="max-w-7xl mx-auto relative z-10">
         <div class="text-center mb-16">
-          <!-- <div class="flex items-center space-x-2 mb-2">
-            <div class="border border-amber-700 w-12" />
-            <h2 class="uppercase text-secondary">What We Offer</h2>
-          </div> -->
-          <h2 class="text-4xl md:text-5xl font-bold mt-3">
-            What Our <em class="text-sun not-italic">Clients</em> Say
+          <p
+            class="text-sm font-bold tracking-widest uppercase text-amber-600 mb-3"
+          >
+            Testimonials
+          </p>
+          <h2
+            class="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-bold leading-tight"
+          >
+            What Our Clients Say
           </h2>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div
             class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
           >
@@ -328,12 +413,9 @@
               time. Highly recommend!
             </p>
             <div class="mt-6 flex items-center gap-3">
-              <div
-                class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg"
-              ></div>
               <div>
                 <div class="font-bold">Chukwuemeka O.</div>
-                <div class="text-sm">Restaurant Owner, Lagos</div>
+                <div class="text-base">Restaurant Owner, Lagos</div>
               </div>
             </div>
           </div>
@@ -347,12 +429,9 @@
               My farm is thriving!
             </p>
             <div class="mt-6 flex items-center gap-3">
-              <div
-                class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg"
-              ></div>
               <div>
-                <div class="font-bold">Aisha M.</div>
-                <div class="text-sm">New Farmer, Kaduna</div>
+                <div class="font-bold text-base lg:text-lg">Aisha M.</div>
+                <div class="text-sm lg:text-base">New Farmer, Kaduna</div>
               </div>
             </div>
           </div>
@@ -366,12 +445,9 @@
               Great partnership!
             </p>
             <div class="mt-6 flex items-center gap-3">
-              <div
-                class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg"
-              ></div>
               <div>
                 <div class="font-bold">Babatunde A.</div>
-                <div class="text-sm">Food Distributor, Ibadan</div>
+                <div class="text-base">Food Distributor, Ibadan</div>
               </div>
             </div>
           </div>
@@ -408,14 +484,14 @@ const slides = [
     subtitle: "Ethically raised • No antibiotics • Pasture-fed",
   },
   {
-    image: "/images/cassava.jpg",
-    alt: "Fresh catfish and tilapia in sustainable aquaculture ponds",
+    image: "/images/catfish.jpg",
+    alt: "Fresh catfish in sustainable aquaculture ponds",
     sector: "Aquaculture",
-    title: "Catfish & Tilapia",
+    title: "Catfish",
     subtitle: "Freshwater farmed • Organic feed • Premium quality",
   },
   {
-    image: "/images/f.jpg",
+    image: "/images/cassava.jpg",
     alt: "High-yield cassava roots harvested from fertile farmland",
     sector: "Crops",
     title: "Premium Cassava",
@@ -524,19 +600,102 @@ const onSlideChange = (swiper) => {
 // Marquee items
 const marqueeItems = [
   "Layer Hens",
+  "Cattle",
   "Catfish ",
+  "Cow ",
   "Broiler Chickens",
+  "Goat",
   "Cassava Farming",
   "Fresh Eggs Daily",
 ];
-</script>
 
-<style scoped>
-/* Responsive adjustments */
-@media (max-width: 640px) {
-  :deep(.swiper-button-prev),
-  :deep(.swiper-button-next) {
-    display: none;
-  }
-}
-</style>
+const services = [
+  {
+    id: 1,
+    title: "Poultry Farming",
+    description:
+      "Premium free-range chickens raised on natural, high-quality feed. Daily supply of live birds, freshly dressed chicken, and farm-fresh eggs to households, restaurants, and markets.",
+    icon: "/icons/chicken.svg",
+    background:
+      "linear-gradient(135deg, #8B4513 0%, #D2691E 35%, #FFB74D 100%)", // Warm terracotta → golden brown (evokes healthy chickens & sunlit farms)
+  },
+  {
+    id: 2,
+    title: "Catfish Farming",
+    description:
+      "Premium freshwater catfish raised in clean ponds with organic feed. Consistently fresh, tender, and flavorful — perfect for homes, hotels, and local markets.",
+    icon: "/icons/fish.svg",
+    background:
+      "linear-gradient(135deg, #01579B 0%, #0288D1 40%, #4FC3F7 100%)", // Deep ocean blue → bright cyan (fresh, clean water feel)
+  },
+  {
+    id: 3,
+    title: "Cassava Farming",
+    description:
+      "High-yield, organically grown cassava varieties. Supporting food security and delivering top-quality tubers for processing, households, and industrial use.",
+    icon: "/icons/plant.svg",
+    background:
+      "linear-gradient(135deg, #1B5E20 0%, #388E3C 40%, #81C784 100%)", // Rich forest green → fresh vibrant green (lush, growing crops)
+  },
+  {
+    id: 4,
+    title: "Livestock Farming",
+    description:
+      "Healthy cattle, pigs, and other livestock raised naturally. Reliable daily supply of live animals and quality meat to families, butchers, and markets across the region.",
+    icon: "/icons/cow.svg",
+    background:
+      "linear-gradient(135deg, #5D4037 0%, #8D6E63 35%, #BCAAA4 100%)", // Deep earthy brown → warm taupe (soil, strength, tradition)
+  },
+];
+
+const sideItems = [
+  {
+    title: "100% Chemical Free",
+    description:
+      "All our produce is grown without harmful pesticides or synthetic growth agents — safe for your family.",
+    icon: "healthicons:plant-outline",
+  },
+  {
+    title: "Direct Farm Delivery",
+    description:
+      "Cut out the middlemen. Fresh produce reaches you directly from our farm at better prices.",
+    icon: "healthicons:truck-outline",
+  },
+  {
+    title: "Expert Farm Team",
+    description:
+      "Agronomists, vets, and aquaculture specialists with 10+ years of hands-on Nigerian farming experience.",
+    icon: "healthicons:people-outline",
+  },
+];
+
+const pillars = [
+  {
+    title: "Natural & organic feed practices",
+    description:
+      "Water recycling, composting, and eco-conscious feed sourcing are built into every part of our operation — not an afterthought.",
+    tag: "Environment first",
+    lineColor: "#1c3d27",
+    tagBg: "rgba(28,61,39,0.08)",
+    tagColor: "#1c3d27",
+  },
+  {
+    title: "Free-range & welfare-focused",
+    description:
+      "Dry season or rainy season — we plan our cycles to ensure households, restaurants, and bulk buyers always have supply.",
+    tag: "Zero stockouts",
+    lineColor: "#c4a030",
+    tagBg: "rgba(196,160,48,0.12)",
+    tagColor: "#7a6010",
+  },
+  {
+    title: "Community Rooted",
+    description:
+      "We hire locally, train young farmers, and reinvest in the communities around us — because farming should lift everyone up.",
+    tag: "Local impact",
+    lineColor: "#c4704a",
+    tagBg: "rgba(196,112,74,0.12)",
+    tagColor: "#7a3a20",
+  },
+];
+</script>
