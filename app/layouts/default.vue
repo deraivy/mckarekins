@@ -50,15 +50,35 @@
         <transition name="slide-fade">
           <div
             v-if="menuOpen"
-            class="md:hidden mt-4 bg-soil/95 backdrop-blur-md rounded-2xl px-6 py-4"
+            class="md:hidden mt-4 backdrop-blur-md rounded-2xl px-6 py-4"
           >
             <ul class="flex flex-col gap-3 text-cream text-sm">
-              <li v-for="link in navLinks" :key="link.href">
-                <a
-                  :href="link.href"
-                  class="block py-2 border-b border-white/10 hover:text-sun transition-colors"
-                  @click="menuOpen = false"
-                  >{{ link.label }}</a
+              <li>
+                <NuxtLink
+                  to="/"
+                  class="text-base lg:text-lg hover: text-primary"
+                  >Home</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/about"
+                  class="text-base lg:text-lg hover: text-primary"
+                  >About</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/"
+                  class="text-base lg:text-lg hover: text-primary"
+                  >Products</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/contact"
+                  class="text-base lg:text-lg hover: text-primary"
+                  >Contact</NuxtLink
                 >
               </li>
             </ul>
@@ -161,9 +181,9 @@
               <p class="mt-2">
                 Phone:
                 <a
-                  href="tel:+2347042641446"
+                  href="tel:+2347077653223"
                   class="hover:text-accent transition"
-                  >+234 704 2641-446</a
+                  >+234 707-7653-223</a
                 >
               </p>
             </address>
@@ -196,12 +216,12 @@
 <script setup>
 const scrolled = ref(false);
 const menuOpen = ref(false);
-const navLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
-];
+// const navLinks = [
+//   { label: "Home", href: "#hero" },
+//   { label: "About", href: "#about" },
+//   { label: "Services", href: "#services" },
+//   { label: "Contact", href: "#contact" },
+// ];
 </script>
 
 <style lang="scss" scoped></style>

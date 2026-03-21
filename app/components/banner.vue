@@ -27,7 +27,7 @@
       </h2>
 
       <p
-        class="text-[#ede3ce]/70 text-sm sm:text-base leading-relaxed max-w-xl mb-7"
+        class="text-[#ede3ce]/70 text-base lg:text-lg leading-relaxed max-w-xl mb-7"
       >
         Tour our crop fields, chicken pens, and catfish ponds. Experience real,
         fresh farming firsthand — no filters, no packaging.
@@ -35,12 +35,12 @@
 
       <div class="flex gap-3 flex-wrap justify-center">
         <button
-          class="bg-[#e8cfa0] text-[#1c3d27] font-bold text-sm px-8 py-3 rounded-full hover:bg-[#f5e8c8] hover:-translate-y-0.5 transition-all duration-200"
+          class="bg-[#e8cfa0] text-[#1c3d27] font-bold text-base px-8 py-3 rounded-full hover:bg-[#f5e8c8] hover:-translate-y-0.5 transition-all duration-200"
         >
           Book a Visit Today
         </button>
         <button
-          class="text-[#e8cfa0]/85 font-semibold text-sm px-8 py-3 rounded-full border border-[#e8cfa0]/30 hover:border-[#e8cfa0]/70 hover:text-[#e8cfa0] transition-all duration-200"
+          class="text-[#e8cfa0]/85 font-semibold text-base px-8 py-3 rounded-full border border-[#e8cfa0]/30 hover:border-[#e8cfa0]/70 hover:text-[#e8cfa0] transition-all duration-200"
         >
           Call Us Instead
         </button>

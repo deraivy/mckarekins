@@ -192,7 +192,7 @@
     </div>
 
     <!-- Organic Farming -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-32">
       <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <!-- Video -->
         <div class="relative rounded-2xl overflow-hidden group">
@@ -200,15 +200,6 @@
             src="/images/cassavaw.jpg"
             class="w-full h-[530px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
-
-          <div
-            class="absolute bottom-5 left-5 bg-[#1c3d27]/90 backdrop-blur-sm border border-[#e8cfa0]/20 rounded-full px-4 py-3 flex items-center gap-3"
-          >
-            <span
-              class="text-[#e8cfa0] text-xs font-bold tracking-widest uppercase"
-              >Active Farm — Epe, Lagos</span
-            >
-          </div>
         </div>
 
         <!-- Content -->
@@ -256,7 +247,7 @@
     </section>
 
     <!-- What We Offer -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
       <div class="text-center mb-12">
         <p
           class="text-sm font-bold tracking-widest uppercase text-amber-600 mb-3"
@@ -338,14 +329,13 @@
           </h2>
 
           <p
-            class="text-sm sm:text-base text-[#2a4a35]/70 leading-relaxed max-w-xl mx-auto"
+            class="text-base lg:text-lg text-[#2a4a35]/70 leading-relaxed max-w-xl mx-auto"
           >
             We combine traditional farming experience with modern practices to
             deliver quality you can trust every time.
           </p>
         </div>
 
-        <!-- Bottom Pillars -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
           <div
             v-for="(pillar, index) in pillars"
@@ -371,7 +361,9 @@
             </h4>
 
             <!-- Description -->
-            <p class="text-base text-[#2a4a35]/70 leading-relaxed mb-5">
+            <p
+              class="text-base lg:text-lg text-[#2a4a35]/70 leading-relaxed mb-5"
+            >
               {{ pillar.description }}
             </p>
 
@@ -407,15 +399,15 @@
           <div
             class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
           >
-            <p class="leading-relaxed">
+            <p class="leading-relaxed text-base md:text-lg">
               GreenRoot supplied our restaurant with fresh catfish every week
               for two years. The quality is unmatched and delivery is always on
               time. Highly recommend!
             </p>
             <div class="mt-6 flex items-center gap-3">
               <div>
-                <div class="font-bold">Chukwuemeka O.</div>
-                <div class="text-base">Restaurant Owner, Lagos</div>
+                <div class="font-bold text-base lg:text-lg">Chukwuemeka O.</div>
+                <div class="text-sm lg:text-base">Restaurant Owner, Lagos</div>
               </div>
             </div>
           </div>
@@ -423,7 +415,7 @@
           <div
             class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
           >
-            <p class="leading-relaxed">
+            <p class="leading-relaxed text-base md:text-lg text-primary">
               I started my own poultry farm after their advisory workshop. The
               support and training I received was practical and life-changing.
               My farm is thriving!
@@ -439,15 +431,15 @@
           <div
             class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
           >
-            <p class="leading-relaxed">
+            <p class="leading-relaxed text-base md:text-lg">
               We source all our cassava tubers and garri from GreenRoot. Their
               bulk pricing is fair and the produce is always clean and fresh.
               Great partnership!
             </p>
             <div class="mt-6 flex items-center gap-3">
               <div>
-                <div class="font-bold">Babatunde A.</div>
-                <div class="text-base">Food Distributor, Ibadan</div>
+                <div class="font-bold text-base lg:text-lg">Babatunde A.</div>
+                <div class="text-sm lg:text-base">Food Distributor, Ibadan</div>
               </div>
             </div>
           </div>

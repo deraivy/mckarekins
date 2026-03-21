@@ -123,7 +123,7 @@
                   id="firstName"
                   type="text"
                   placeholder="Olamilekan"
-                  class="border border-divider rounded-lg outline-none px-4 py-3 bg-white focus:border-primary focus:ring-1 focus:ring-primary transition"
+                  class="border border-divider rounded-lg outline-none px-4 py-3 bg-[#f0ead6] focus:border-primary focus:ring-1 focus:ring-primary transition"
                 />
               </div>
 
@@ -138,7 +138,7 @@
                   id="lastName"
                   type="text"
                   placeholder="Igwe"
-                  class="border border-divider rounded-lg outline-none px-4 py-3 bg-white focus:border-primary focus:ring-1 focus:ring-primary transition"
+                  class="border border-divider rounded-lg outline-none px-4 py-3 bg-[#f0ead6] focus:border-primary focus:ring-1 focus:ring-primary transition"
                 />
               </div>
             </div>
@@ -154,7 +154,7 @@
                 id="email"
                 type="email"
                 placeholder="yourname@example.com"
-                class="border border-divider rounded-lg outline-none px-4 py-3 bg-white focus:border-primary focus:ring-1 focus:ring-primary transition"
+                class="border border-divider rounded-lg outline-none px-4 py-3 bg-[#f0ead6] focus:border-primary focus:ring-1 focus:ring-primary transition"
               />
             </div>
 
@@ -169,7 +169,7 @@
                 id="message"
                 rows="6"
                 placeholder="Tell us what you need... (e.g. bulk eggs, partnership, farm tour, etc.)"
-                class="border border-divider rounded-lg outline-none px-4 py-3 bg-white focus:border-primary focus:ring-1 focus:ring-primary transition resize-y"
+                class="border border-divider rounded-lg outline-none px-4 py-3 bg-[#f0ead6] focus:border-primary focus:ring-1 focus:ring-primary transition resize-y"
               ></textarea>
             </div>
 
