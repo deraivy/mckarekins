@@ -1,9 +1,6 @@
 <template>
   <div>
-    <!-- <div class="bg-[#1c3d27] py-2">
-      <p class="text-white text-sm text-center">Plot 5 - 15 Old Lagos Road</p>
-    </div> -->
-    <div class="bg-secondaryTint">
+    <div class="">
       <nav
         class="top-0 left-0 right-0 z-50 py-4 px-6 md:px-16 transition-all duration-500 border-b border-[#d4c0a0]"
       >
@@ -41,45 +38,31 @@
             @click="menuOpen = !menuOpen"
             class="md:hidden text-cream text-2xl p-2"
           >
-            <span v-if="!menuOpen">☰</span>
-            <span v-else>✕</span>
+            <span v-if="!menuOpen">
+              <Icon name="ion:menu" class="" />
+            </span>
+            <span v-else>
+              <Icon name="eva:close-fill" />
+            </span>
           </button>
         </div>
 
         <!-- Mobile Menu -->
-        <transition name="slide-fade">
+        <transition name="mobile-menu">
           <div
             v-if="menuOpen"
-            class="md:hidden mt-4 backdrop-blur-md rounded-2xl px-6 py-4"
+            class="md:hidden fixed inset-x-0 top-[72px] z-50 bg-[#f0ead6] border-t border-[#d4c0a0]/40 shadow-lg rounded-b-2xl"
           >
-            <ul class="flex flex-col gap-3 text-cream text-sm">
-              <li>
+            <ul class="flex flex-col px-6 py-4 gap-1">
+              <li v-for="link in navLinks" :key="link.label">
                 <NuxtLink
-                  to="/"
-                  class="text-base lg:text-lg hover: text-primary"
-                  >Home</NuxtLink
+                  :to="link.to"
+                  @click="menuOpen = false"
+                  class="block px-4 py-3 rounded-xl text-[#1c3d27] font-medium text-base hover:bg-[#1c3d27]/06 transition-colors duration-200"
+                  active-class="bg-[#1c3d27] !text-[#e8cfa0]"
                 >
-              </li>
-              <li>
-                <NuxtLink
-                  to="/about"
-                  class="text-base lg:text-lg hover: text-primary"
-                  >About</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  to="/"
-                  class="text-base lg:text-lg hover: text-primary"
-                  >Products</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  to="/contact"
-                  class="text-base lg:text-lg hover: text-primary"
-                  >Contact</NuxtLink
-                >
+                  {{ link.label }}
+                </NuxtLink>
               </li>
             </ul>
           </div>
@@ -216,12 +199,33 @@
 <script setup>
 const scrolled = ref(false);
 const menuOpen = ref(false);
-// const navLinks = [
-//   { label: "Home", href: "#hero" },
-//   { label: "About", href: "#about" },
-//   { label: "Services", href: "#services" },
-//   { label: "Contact", href: "#contact" },
-// ];
+const navLinks = [
+  { label: "Home", to: "/", icon: "🏡" },
+  { label: "About", to: "/about", icon: "🌿" },
+  { label: "Products", to: "/products", icon: "🌾" },
+  { label: "Contact", to: "/contact", icon: "📞" },
+];
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+/* Slide sheet */
+.sheet-enter-active,
+.sheet-leave-active {
+  transition: all 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.sheet-enter-from,
+.sheet-leave-to {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* Backdrop fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
