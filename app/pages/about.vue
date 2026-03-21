@@ -39,20 +39,11 @@
           <div
             class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative group"
           >
-            <!-- <img
+            <img
               src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=1000&fit=crop"
               alt="Young plant in hands"
               class="w-full h-full object-cover image-hover border rounded-3xl"
-            /> -->
-
-            <video
-              src="/images/cattle.MP4"
-              autoplay
-              muted
-              loop
-              playsinline
-              class="w-full h-full object-cover"
-            ></video>
+            />
 
             <div
               class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-moss-900/90 via-moss-900/50 to-transparent p-8"
