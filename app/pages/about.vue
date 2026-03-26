@@ -40,19 +40,19 @@
             class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative group"
           >
             <img
-              src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=1000&fit=crop"
+              src="/images/about.jpg"
               alt="Young plant in hands"
               class="w-full h-full object-cover image-hover border rounded-3xl"
             />
 
-            <div
+            <!-- <div
               class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-moss-900/90 via-moss-900/50 to-transparent p-8"
             >
               <p class="text-white font-serif text-xl italic">
                 "The beginning of everything"
               </p>
               <p class="text-moss-200 text-sm mt-2">2018</p>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -73,8 +73,8 @@
               Built from the Soil Up, Grown with Purpose
             </h1>
             <p class="text-base md:text-lg text-primary leading-relaxed">
-              McKariens Farms is nestled in the heart of Epe, Lagos one of
-              Nigeria's most fertile farming belts. Founded in 2022, we were
+              Mckarekins Farms is nestled in the heart of Owu-Ikosi, Lagos one
+              of Nigeria's most fertile farming belts. Founded in 2022, we were
               established with one clear mission: to build a self-sustaining
               agricultural enterprise that creates real economic opportunities
               for local communities while producing clean, natural food for
@@ -163,321 +163,252 @@
         </div>
       </div>
 
-      <section class="py-20 md:py-28">
+      <section class="py-16 font-sans">
         <!-- Header -->
-        <div class="text-center mb-12 md:mb-16 px-4">
+        <div class="text-center mb-12 px-4">
           <p
-            class="text-xs font-bold tracking-widest uppercase text-amber-600 mb-3"
+            class="text-[10px] font-medium tracking-[0.18em] uppercase text-amber-600 mb-3"
           >
             Our Operations
           </p>
           <h2
-            class="font-serif text-3xl sm:text-4xl lg:text-5xl max-w-lg mx-auto font-bold text-[#1c3d27] leading-tight"
+            class="font-serif text-4xl md:text-5xl font-bold text-[#1c3d27] leading-tight max-w-md mx-auto mb-3"
           >
             Life on the Farm
           </h2>
+          <p
+            class="text-sm text-neutral-400 font-light max-w-xs mx-auto leading-relaxed"
+          >
+            A glimpse into our daily operations and how we raise our animals.
+          </p>
         </div>
 
-        <!-- Grid -->
+        <!-- Bento Grid -->
         <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-7xl mx-auto px-4 md:px-6 lg:px-8"
+          class="grid grid-cols-2 md:grid-cols-4 grid-rows-[300px_220px] gap-3.5"
         >
-          <!-- Cassava – tall featured video -->
+          <!-- Featured 2x2 -->
           <div
-            class="col-span-2 row-span-2 rounded-3xl overflow-hidden relative group shadow-xl cursor-pointer outline-none focus-visible:ring-4 focus-visible:ring-green-600/50"
-            tabindex="0"
-            @keydown.enter="togglePlay(1)"
-            @keydown.space.prevent="togglePlay(1)"
+            class="col-span-2 row-span-2 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#1c2b1e]"
+            @click="openVideo('/images/cattle.mp4')"
           >
-            <!-- Poster -->
-            <img
-              :src="videos[0].poster"
-              class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
-              :class="
-                videos[0].isPlaying
-                  ? 'opacity-0 pointer-events-none'
-                  : 'opacity-100'
-              "
-              loading="lazy"
-            />
-            <!-- Video -->
             <video
-              :ref="(el) => setVideoRef(el, 1)"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
-              playsinline
-              class="w-full h-[530px] object-cover transition-transform duration-700 group-hover:scale-105"
-              :poster="videos[0].poster"
-              @ended="handleVideoEnd(1)"
-              @click="togglePlay(1)"
+              preload="metadata"
             >
-              <source :src="videos[0].src" type="video/mp4" />
+              <source src="/images/cattle.mp4" type="video/mp4" />
             </video>
-
-            <!-- Overlay -->
             <div
-              class="absolute inset-0 z-20 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none transition-opacity duration-400 opacity-80 group-hover:opacity-100"
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-55 group-hover:opacity-100 transition-opacity duration-300"
             />
-
-            <!-- Label -->
-            <div
-              class="absolute bottom-0 left-0 right-0 z-30 p-5 md:p-7 pointer-events-none"
-            >
-              <span
-                class="text-white font-semibold text-lg md:text-2xl drop-shadow-md"
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-[68px] h-[68px] bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center transition-transform duration-200 group-hover:scale-110"
               >
-                {{ videos[0].label }}
+                <svg viewBox="0 0 24 24" fill="#1c3d27" class="w-7 h-7 ml-1">
+                  <polygon points="6,4 20,12 6,20" />
+                </svg>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <span
+                class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
+              >
+                Featured
               </span>
-            </div>
-
-            <!-- Play / Pause button -->
-            <button
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:bg-white/35 hover:scale-110 active:scale-95 focus:outline-none"
-              :class="
-                videos[0].isPlaying
-                  ? 'opacity-0 group-hover:opacity-80'
-                  : 'opacity-90'
-              "
-              @click.stop="togglePlay(1)"
-              :aria-label="videos[0].isPlaying ? 'Pause video' : 'Play video'"
-            >
-              <svg
-                v-if="!videos[0].isPlaying"
-                class="w-6 h-6 translate-x-0.5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
+              <h3
+                class="font-serif text-[26px] font-semibold text-white leading-tight"
               >
-                <path d="M8 5.14v14l11-7-11-7z" />
-              </svg>
-              <svg
-                v-else
-                class="w-6 h-6"
-                viewBox="0 0 24 24"
-                fill="currentColor"
+                Free-Range Chickens
+              </h3>
+              <p
+                class="text-[13px] text-white/70 font-light mt-1.5 leading-relaxed"
               >
-                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
-              </svg>
-            </button>
-
-            <!-- Playing badge -->
-            <div
-              class="absolute top-4 right-4 z-30 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/40 backdrop-blur-sm pointer-events-none transition-all duration-300"
-              :class="
-                videos[0].isPlaying
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 -translate-y-1'
-              "
-            >
-              <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span
-                class="text-white/90 text-[10px] font-semibold tracking-widest uppercase"
-                >Playing</span
-              >
+                Follow our flock from morning feeding to evening roost
+              </p>
             </div>
           </div>
 
-          <!-- Aquaculture -->
+          <!-- Small 1 -->
           <div
-            class="rounded-3xl overflow-hidden relative group shadow-lg aspect-[4/3]"
+            class="col-span-1 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#2e3a20]"
+            @click="openVideo('/images/chicken.mp4')"
           >
             <video
-              src="/images/catfish.MP4"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            ></video>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-400"
-            />
-            <div class="absolute bottom-0 left-0 right-0 p-4 md:p-5">
-              <span
-                class="text-white font-semibold text-base md:text-lg drop-shadow"
-                >Aquaculture</span
-              >
-            </div>
-          </div>
-
-          <!-- Poultry -->
-          <div
-            class="rounded-3xl overflow-hidden relative group shadow-lg aspect-[4/3]"
-          >
-            <video
-              src="/images/traffic.MP4"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            ></video>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-400"
-            />
-            <div class="absolute bottom-0 left-0 right-0 p-4 md:p-5">
-              <span
-                class="text-white font-semibold text-base md:text-lg drop-shadow"
-                >Free-Range Poultry</span
-              >
-            </div>
-          </div>
-
-          <!-- Integrated Farm Life – wide featured video -->
-          <div
-            class="col-span-2 rounded-3xl overflow-hidden relative group shadow-xl cursor-pointer outline-none focus-visible:ring-4 focus-visible:ring-green-600/50 aspect-video"
-            tabindex="0"
-            @keydown.enter="togglePlay(2)"
-            @keydown.space.prevent="togglePlay(2)"
-          >
-            <!-- Poster -->
-            <img
-              :src="videos[1].poster"
-              alt="Integrated farming layout"
-              class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
-              :class="
-                videos[1].isPlaying
-                  ? 'opacity-0 pointer-events-none'
-                  : 'opacity-100'
-              "
-              loading="lazy"
-            />
-            <!-- Video -->
-            <video
-              :ref="(el) => setVideoRef(el, 2)"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
-              loop
-              playsinline
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              :poster="videos[1].poster"
-              @ended="handleVideoEnd(2)"
-              @click="togglePlay(2)"
+              preload="metadata"
             >
-              <source :src="videos[1].src" type="video/mp4" />
+              <source src="/images/chicken.mp4" type="video/mp4" />
             </video>
-
-            <!-- Overlay -->
             <div
-              class="absolute inset-0 z-20 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none transition-opacity duration-400 opacity-80 group-hover:opacity-100"
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
             />
-
-            <!-- Label -->
-            <div
-              class="absolute bottom-0 left-0 right-0 z-30 p-5 md:p-7 pointer-events-none"
-            >
-              <span
-                class="text-white font-semibold text-lg md:text-2xl drop-shadow-md"
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-[52px] h-[52px] bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center transition-transform duration-200 group-hover:scale-110"
               >
-                {{ videos[1].label }}
-              </span>
+                <svg viewBox="0 0 24 24" fill="#1c3d27" class="w-5 h-5 ml-0.5">
+                  <polygon points="6,4 20,12 6,20" />
+                </svg>
+              </div>
             </div>
-
-            <!-- Play / Pause button -->
-            <button
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:bg-white/35 hover:scale-110 active:scale-95 focus:outline-none"
-              :class="
-                videos[1].isPlaying
-                  ? 'opacity-0 group-hover:opacity-80'
-                  : 'opacity-90'
-              "
-              @click.stop="togglePlay(2)"
-              :aria-label="videos[1].isPlaying ? 'Pause video' : 'Play video'"
-            >
-              <svg
-                v-if="!videos[1].isPlaying"
-                class="w-6 h-6 translate-x-0.5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M8 5.14v14l11-7-11-7z" />
-              </svg>
-              <svg
-                v-else
-                class="w-6 h-6"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
-              </svg>
-            </button>
-
-            <!-- Playing badge -->
-            <div
-              class="absolute top-4 right-4 z-30 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/40 backdrop-blur-sm pointer-events-none transition-all duration-300"
-              :class="
-                videos[1].isPlaying
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 -translate-y-1'
-              "
-            >
-              <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            <div class="absolute bottom-0 left-0 right-0 p-5">
               <span
-                class="text-white/90 text-[10px] font-semibold tracking-widest uppercase"
-                >Playing</span
+                class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
               >
+                Kitchen
+              </span>
+              <h4
+                class="font-serif text-[18px] font-semibold text-white leading-tight"
+              >
+                Culinary Delights
+              </h4>
+            </div>
+          </div>
+
+          <!-- Small 2 -->
+          <div
+            class="col-span-1 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#1e2d35]"
+            @click="openVideo('/images/traffic.mp4')"
+          >
+            <video
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+              muted
+              preload="metadata"
+            >
+              <source src="/images/traffic.mp4" type="video/mp4" />
+            </video>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-[52px] h-[52px] bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center transition-transform duration-200 group-hover:scale-110"
+              >
+                <svg viewBox="0 0 24 24" fill="#1c3d27" class="w-5 h-5 ml-0.5">
+                  <polygon points="6,4 20,12 6,20" />
+                </svg>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span
+                class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
+              >
+                Innovation
+              </span>
+              <h4
+                class="font-serif text-[18px] font-semibold text-white leading-tight"
+              >
+                Tech on the Farm
+              </h4>
+            </div>
+          </div>
+
+          <!-- Wide 2x1 -->
+          <div
+            class="col-span-2 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#1a2e38]"
+            @click="openVideo('/images/catfish.mp4')"
+          >
+            <video
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+              muted
+              preload="metadata"
+            >
+              <source src="/images/catfish.mp4" type="video/mp4" />
+            </video>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div
+                class="w-[52px] h-[52px] bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center transition-transform duration-200 group-hover:scale-110"
+              >
+                <svg viewBox="0 0 24 24" fill="#1c3d27" class="w-5 h-5 ml-0.5">
+                  <polygon points="6,4 20,12 6,20" />
+                </svg>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <span
+                class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
+              >
+                Aquaculture
+              </span>
+              <h4
+                class="font-serif text-[20px] font-semibold text-white leading-tight"
+              >
+                Catfish Ponds
+              </h4>
+              <p
+                class="text-[13px] text-white/70 font-light mt-1.5 leading-relaxed"
+              >
+                Sustainable fish farming from fingerling to harvest
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- Video Modal -->
+        <Teleport to="body">
+          <Transition
+            enter-active-class="transition-opacity duration-200 ease-out"
+            enter-from-class="opacity-0"
+            leave-active-class="transition-opacity duration-200 ease-in"
+            leave-to-class="opacity-0"
+          >
+            <div
+              v-if="activeVideo"
+              class="fixed inset-0 bg-black/70 flex items-center justify-center z-[100] p-4"
+              @click.self="closeVideo"
+            >
+              <div class="relative w-full max-w-4xl">
+                <button
+                  @click="closeVideo"
+                  class="absolute -top-12 right-0 text-white/80 hover:text-white text-3xl leading-none transition-colors"
+                >
+                  ✕
+                </button>
+                <video
+                  :src="activeVideo"
+                  controls
+                  autoplay
+                  muted
+                  class="w-full aspect-video rounded-2xl"
+                />
+              </div>
+            </div>
+          </Transition>
+        </Teleport>
       </section>
 
-      <!--  -->
-      <banner />
+      <banner class="mt-24" />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref } from "vue";
 
-const videos = ref([
-  {
-    id: 1,
-    isPlaying: false,
-    label: "Cassava Cultivation",
-    poster: "/images/nchicken.jpg",
-    src: "/images/chicken.MP4",
-  },
-  {
-    id: 2,
-    isPlaying: false,
+const activeVideo = ref(null);
 
-    poster: "/images/cassavaw.jpg",
-    src: "/images/catfish.MP4",
-  },
-]);
+function openVideo(src) {
+  activeVideo.value = src;
+}
 
-const videoRefs = ref({});
-
-const setVideoRef = (el, id) => {
-  if (el) videoRefs.value[id] = el;
-};
-
-const togglePlay = (id) => {
-  const video = videos.value.find((v) => v.id === id);
-  const el = videoRefs.value[id];
-  if (!video || !el) return;
-  if (el.paused) {
-    el.play();
-    video.isPlaying = true;
-  } else {
-    el.pause();
-    video.isPlaying = false;
-  }
-};
-
-const handleVideoEnd = (id) => {
-  const video = videos.value.find((v) => v.id === id);
-  if (video) video.isPlaying = false;
-};
-
-const handleVisibilityChange = () => {
-  if (document.hidden) {
-    videos.value.forEach((v) => {
-      const el = videoRefs.value[v.id];
-      if (el && !el.paused) {
-        el.pause();
-        v.isPlaying = false;
-      }
-    });
-  }
-};
-
-onMounted(() =>
-  document.addEventListener("visibilitychange", handleVisibilityChange),
-);
-onUnmounted(() =>
-  document.removeEventListener("visibilitychange", handleVisibilityChange),
-);
+function closeVideo() {
+  activeVideo.value = null;
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

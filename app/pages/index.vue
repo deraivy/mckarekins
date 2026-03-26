@@ -27,11 +27,10 @@
             </h1>
 
             <p
-              class="text-lg text-[#ede3ce]/90 leading-relaxed max-w-lg mx-auto lg:mx-0 text-balance"
+              class="text-base md:text-lg text-[#ede3ce]/90 leading-relaxed max-w-lg mx-auto lg:mx-0 text-balance"
             >
-              Premium catfish, tilapia, poultry, and cassava — cultivated with
-              traditional wisdom and modern innovation across 50+ acres of
-              Nigerian farmland.
+              Premium catfish, livestock, poultry, and cassava cultivated with
+              traditional wisdom and modern innovation
             </p>
 
             <div
@@ -198,7 +197,7 @@
         <div class="relative rounded-2xl overflow-hidden group">
           <NuxtImg
             src="/images/cassavaw.jpg"
-            class="w-full h-[530px] object-cover transition-transform duration-700 group-hover:scale-105"
+            class="w-full aspect-[4/3] md:aspect-[6/5] object-cover transition-transform duration-700 group-hover:scale-105"
           />
         </div>
 
@@ -218,12 +217,13 @@
 
           <div class="space-y-6">
             <p class="leading-relaxed text-base md:text-lg text-primary">
-              Kinse Farms is nestled in the heart of Epe, Lagos one of Nigeria's
-              most fertile farming regions. Founded with a clear mission: to
-              drive economic growth, build agricultural capacity, create jobs,
-              and eradicate poverty through sustainable farming. Though we have
-              been farming for over a decade, the business was formally
-              incorporated by the Corporate Affairs Commission in May 2016.
+              Mckarekins Farms is nestled in the heart of Epe, Lagos one of
+              Nigeria's most fertile farming regions. Founded with a clear
+              mission: to drive economic growth, build agricultural capacity,
+              create jobs, and eradicate poverty through sustainable farming.
+              Though we have been farming for over a decade, the business was
+              formally incorporated by the Corporate Affairs Commission in May
+              2016.
             </p>
 
             <p class="leading-relaxed text-base md:text-lg text-primary">
@@ -260,11 +260,11 @@
           Our Products
         </h2>
         <p
-          class="text-lg leading-relaxed max-w-3xl mx-auto text-secondary/90 font-sans"
+          class="text-base leading-relaxed max-w-3xl mx-auto text-secondary/90 font-sans"
         >
-          We integrate crops, livestock, aquaculture, and value addition to
-          recycle resources, increase yields, diversify income, and strengthen
-          food security across Nigeria.
+          We integrate crops, livestock, aquaculture, to recycle resources,
+          increase yields, diversify income, and strengthen food security across
+          Nigeria.
         </p>
       </div>
 
@@ -278,31 +278,27 @@
           :style="{ background: service.background }"
         >
           <div class="p-6 h-full flex flex-col relative">
-            <!-- Overlay gradient for better text contrast -->
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent pointer-events-none"
             ></div>
 
             <div class="relative z-10">
-              <!-- Icon container -->
               <div
-                class="w-16 h-16 p-3 rounded-xl flex items-center justify-center mb-5 backdrop-blur-sm bg-white/15 border border-white/25 shadow-inner group-hover:bg-white/25 transition-colors duration-300"
+                class="w-12 h-12 p-1 rounded-xl flex items-center justify-center mb-5 backdrop-blur-sm bg-white/15 border border-white/25 shadow-inner group-hover:bg-white/25 transition-colors duration-300"
               >
-                <NuxtImg
-                  :src="service.icon"
-                  class="w-10 h-10 text-white drop-shadow-md"
+                <Icon
+                  :name="service.icon"
+                  class="w-24 h-24 text-white drop-shadow-md"
                 />
               </div>
 
-              <!-- Title -->
               <h3
                 class="text-2xl font-bold mb-3 text-white tracking-tight drop-shadow-md group-hover:text-white transition-colors"
               >
                 {{ service.title }}
               </h3>
 
-              <!-- Description -->
-              <p class="text-lg text-white/90 leading-relaxed drop-shadow-sm">
+              <p class="text-base text-white/70 leading-relaxed drop-shadow-sm">
                 {{ service.description }}
               </p>
             </div>
@@ -473,7 +469,7 @@ const slides = [
     alt: "Free-range chickens grazing on lush green pasture",
     sector: "Poultry",
     title: "Free-Range Chicken",
-    subtitle: "Ethically raised • No antibiotics • Pasture-fed",
+    subtitle: "Free-range • No antibiotics • Pasture-fed",
   },
   {
     image: "/images/catfish.jpg",
@@ -482,12 +478,20 @@ const slides = [
     title: "Catfish",
     subtitle: "Freshwater farmed • Organic feed • Premium quality",
   },
+
+  {
+    image: "/images/ram.jpg",
+    alt: "",
+    sector: "Livestock",
+    title: "Ram",
+    subtitle: "Healthy animals • Organic feed • Pasture raised",
+  },
   {
     image: "/images/cassava.jpg",
     alt: "High-yield cassava roots harvested from fertile farmland",
     sector: "Crops",
     title: "Premium Cassava",
-    subtitle: "High-yield varieties • Organic farming • Food security",
+    subtitle: "Non-GMO • Sustainably grown • Rich in nutrients",
   },
 ];
 
@@ -496,7 +500,7 @@ const badgeConfigs = {
   0: [
     // Poultry
     {
-      text: "🌱 100% Organic",
+      text: "Free-range",
       position: "top-[5%] right-[5%]",
       style: "bg-white/95 text-[#1c3d27]",
       animation: "animate-float",
@@ -514,7 +518,7 @@ const badgeConfigs = {
       animation: "animate-float",
     },
     {
-      text: "Pasture Raised",
+      text: " Pasture-fed",
       position: "bottom-[5%] left-[0%]",
       style: "bg-[#2a4a35] text-white border-[#e8cfa0]/30",
       animation: "animate-float-delayed",
@@ -607,7 +611,7 @@ const services = [
     title: "Poultry Farming",
     description:
       "Premium free-range chickens raised on natural, high-quality feed. Daily supply of live birds, freshly dressed chicken, and farm-fresh eggs to households, restaurants, and markets.",
-    icon: "/icons/chicken.svg",
+    icon: "healthicons:animal-chicken-outline",
     background:
       "linear-gradient(135deg, #8B4513 0%, #D2691E 35%, #FFB74D 100%)", // Warm terracotta → golden brown (evokes healthy chickens & sunlit farms)
   },
@@ -616,7 +620,7 @@ const services = [
     title: "Catfish Farming",
     description:
       "Premium freshwater catfish raised in clean ponds with organic feed. Consistently fresh, tender, and flavorful — perfect for homes, hotels, and local markets.",
-    icon: "/icons/fish.svg",
+    icon: "famicons:fish-outline",
     background:
       "linear-gradient(135deg, #01579B 0%, #0288D1 40%, #4FC3F7 100%)", // Deep ocean blue → bright cyan (fresh, clean water feel)
   },
@@ -625,7 +629,7 @@ const services = [
     title: "Cassava Farming",
     description:
       "High-yield, organically grown cassava varieties. Supporting food security and delivering top-quality tubers for processing, households, and industrial use.",
-    icon: "/icons/plant.svg",
+    icon: "ph:plant",
     background:
       "linear-gradient(135deg, #1B5E20 0%, #388E3C 40%, #81C784 100%)", // Rich forest green → fresh vibrant green (lush, growing crops)
   },
@@ -634,7 +638,7 @@ const services = [
     title: "Livestock Farming",
     description:
       "Healthy cattle, pigs, and other livestock raised naturally. Reliable daily supply of live animals and quality meat to families, butchers, and markets across the region.",
-    icon: "/icons/cow.svg",
+    icon: "game-icons:cow",
     background:
       "linear-gradient(135deg, #5D4037 0%, #8D6E63 35%, #BCAAA4 100%)", // Deep earthy brown → warm taupe (soil, strength, tradition)
   },

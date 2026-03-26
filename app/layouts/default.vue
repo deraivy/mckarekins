@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="">
+    <div class="sticky top-0 bg-[#f0ead6] z-50">
       <nav
         class="top-0 left-0 right-0 z-50 py-4 px-6 md:px-16 transition-all duration-500 border-b border-[#d4c0a0]"
       >
@@ -10,7 +10,7 @@
             <div>
               <span
                 class="font-sans font-black text-cream text-xl leading-none block"
-                >McKareins</span
+                >Mckarekins</span
               >
             </div>
           </NuxtLink>
@@ -26,12 +26,14 @@
           </div>
 
           <!-- CTA -->
-          <NuxtLink
-            to="/contact"
+          <a
+            href="https://api.whatsapp.com/send?phone=+2349136230385&text=Hello,%20I%20need%20your%20services"
+            target="_blank"
+            rel="noopener noreferrer"
             class="hidden md:inline-flex items-center gap-2 bg-gradient-to-br from-[#1c3d27] via-[#234d32] to-[#2a4a35] text-white font-bold px-6 py-3 rounded-full text-sm hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
-            Get In Touch <span>→</span>
-          </NuxtLink>
+            Get In Touch
+          </a>
 
           <!-- Hamburger -->
           <button
@@ -78,7 +80,7 @@
           <!-- Company Info -->
           <div class="space-y-4">
             <div class="flex items-center">
-              <h2>McKareins</h2>
+              <h2>Mckarekins</h2>
             </div>
             <p class="text-white">
               Our aim is to produce high-quality food sustainably, using
@@ -177,7 +179,7 @@
           class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center"
         >
           <p class="text-white text-sm mb-4 md:mb-0">
-            © 2026 McKareins. All rights reserved.
+            © 2026 Mckarekins. All rights reserved.
           </p>
           <div class="flex space-x-6">
             <a href="#" class="text-white hover:text-accent text-sm transition"

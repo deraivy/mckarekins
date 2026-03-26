@@ -34,16 +34,17 @@
       </p>
 
       <div class="flex gap-3 flex-wrap justify-center">
-        <button
+        <NuxtLink
+          to="/contact"
           class="bg-[#e8cfa0] text-[#1c3d27] font-bold text-base px-8 py-3 rounded-full hover:bg-[#f5e8c8] hover:-translate-y-0.5 transition-all duration-200"
         >
-          Book a Visit Today
-        </button>
-        <button
+          Contact Us
+        </NuxtLink>
+        <!-- <button
           class="text-[#e8cfa0]/85 font-semibold text-base px-8 py-3 rounded-full border border-[#e8cfa0]/30 hover:border-[#e8cfa0]/70 hover:text-[#e8cfa0] transition-all duration-200"
         >
           Call Us Instead
-        </button>
+        </button> -->
       </div>
 
       <div class="w-10 h-0.5 bg-[#e8cfa0]/25 rounded my-6"></div>

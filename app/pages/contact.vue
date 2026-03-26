@@ -110,7 +110,7 @@
             Send us a message
           </h3>
 
-          <form class="space-y-6">
+          <form @submit.prevent="sendEmail" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="flex flex-col">
                 <label
@@ -121,6 +121,7 @@
                 </label>
                 <input
                   id="firstName"
+                  name="first_name"
                   type="text"
                   placeholder="Olamilekan"
                   class="border border-divider rounded-lg outline-none px-4 py-3 bg-[#f0ead6] focus:border-primary focus:ring-1 focus:ring-primary transition"
@@ -136,6 +137,7 @@
                 </label>
                 <input
                   id="lastName"
+                  name="last_name"
                   type="text"
                   placeholder="Igwe"
                   class="border border-divider rounded-lg outline-none px-4 py-3 bg-[#f0ead6] focus:border-primary focus:ring-1 focus:ring-primary transition"
@@ -152,6 +154,7 @@
               </label>
               <input
                 id="email"
+                name="user_email"
                 type="email"
                 placeholder="yourname@example.com"
                 class="border border-divider rounded-lg outline-none px-4 py-3 bg-[#f0ead6] focus:border-primary focus:ring-1 focus:ring-primary transition"
@@ -167,6 +170,7 @@
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows="6"
                 placeholder="Tell us what you need... (e.g. bulk eggs, partnership, farm tour, etc.)"
                 class="border border-divider rounded-lg outline-none px-4 py-3 bg-[#f0ead6] focus:border-primary focus:ring-1 focus:ring-primary transition resize-y"
@@ -185,3 +189,25 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import emailjs from "emailjs-com";
+
+const sendEmail = (e) => {
+  emailjs
+    .sendForm(
+      "service_xvzybgx",
+      "template_innunhh",
+      e.target,
+      "I8fMlw0D6mDUp6zcj",
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      e.target.reset();
+    })
+    .catch((error) => {
+      console.error(error);
+      alert("Failed to send message");
+    });
+};
+</script>

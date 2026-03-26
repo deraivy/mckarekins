@@ -4,4 +4,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxt/image", "@nuxtjs/tailwindcss"],
   css: ["./styles/main.css"],
+  app: {
+    head: {
+      title: "Mckarekins",
+      meta: [
+        {
+          name: "description",
+          content: "",
+        },
+      ],
+    },
+  },
 });
