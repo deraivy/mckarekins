@@ -222,7 +222,7 @@
               playsinline
               preload="metadata"
             >
-              <source src="/videos/chicken.mp4" type="video/mp4" />
+              <source src="/public/videos/chicken.MP4" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
