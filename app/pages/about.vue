@@ -177,7 +177,7 @@
               muted
               preload="metadata"
             >
-              <source src="/videos/cattle.mp4" type="video/mp4" />
+              <source :src="'/videos/cattle.mp4'" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-55 group-hover:opacity-100 transition-opacity duration-300"
@@ -194,9 +194,8 @@
             <div class="absolute bottom-0 left-0 right-0 p-6">
               <span
                 class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
+                >Featured</span
               >
-                Featured
-              </span>
               <h3
                 class="font-serif text-[26px] font-semibold text-white leading-tight"
               >
@@ -218,11 +217,10 @@
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
-              loading="lazy"
               playsinline
               preload="metadata"
             >
-              <source src="/videos/chicken.MP4" type="video/mp4" />
+              <source :src="'/videos/chicken.MP4'" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
@@ -239,9 +237,8 @@
             <div class="absolute bottom-0 left-0 right-0 p-5">
               <span
                 class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
+                >Kitchen</span
               >
-                Kitchen
-              </span>
               <h4
                 class="font-serif text-[18px] font-semibold text-white leading-tight"
               >
@@ -259,10 +256,9 @@
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
               preload="metadata"
-              loading="lazy"
               playsinline
             >
-              <source src="/videos/traffic.mp4" type="video/mp4" />
+              <source :src="'/videos/traffic.mp4'" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
@@ -279,9 +275,8 @@
             <div class="absolute bottom-0 left-0 right-0 p-5">
               <span
                 class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
+                >Innovation</span
               >
-                Innovation
-              </span>
               <h4
                 class="font-serif text-[18px] font-semibold text-white leading-tight"
               >
@@ -298,11 +293,10 @@
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
-              loading="lazy"
               playsinline
               preload="metadata"
             >
-              <source src="/videos/catfish.mp4" type="video/mp4" />
+              <source :src="'/videos/catfish.mp4'" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
@@ -319,9 +313,8 @@
             <div class="absolute bottom-0 left-0 right-0 p-6">
               <span
                 class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
+                >Aquaculture</span
               >
-                Aquaculture
-              </span>
               <h4
                 class="font-serif text-[20px] font-semibold text-white leading-tight"
               >
@@ -363,7 +356,6 @@
           </Transition>
         </Teleport>
       </section>
-
       <banner class="mt-24" />
     </div>
   </div>
