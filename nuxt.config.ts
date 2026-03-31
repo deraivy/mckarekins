@@ -15,4 +15,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        external: [/^\/videos\//],
+      },
+    },
+  },
 });
