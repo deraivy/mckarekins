@@ -1,17 +1,19 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero -->
-    <div class="bg-gradient-to-br from-primary via-[#234d32] to-secondary">
+    <div
+      class="bg-gradient-to-br from-primary via-[#234d32] to-secondary overflow-hidden"
+    >
       <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center relative z-10"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center relative"
       >
         <div
-          class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center w-full py-12"
+          class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center w-full py-12 lg:py-0"
         >
           <!-- Left Content -->
-          <div class="space-y-6 lg:w-1/2 text-center lg:text-left">
+          <div class="space-y-8 lg:w-1/2 text-center lg:text-left">
             <div
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-[#d4c0a0]/20 text-[#e8cfa0] text-sm font-medium"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary/90 border border-[#d4c0a0]/30 text-[#e8cfa0] text-sm font-medium tracking-wide"
             >
               <span
                 class="w-2 h-2 rounded-full bg-[#4ade80] animate-pulse"
@@ -20,42 +22,43 @@
             </div>
 
             <h1
-              class="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] text-white text-balance"
+              class="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[1.05] text-white tracking-tighter"
             >
               Farming for a Better
-              <span class="text-[#e8cfa0] block mt-2">Tomorrow</span>
+              <span class="text-[#e8cfa0] block mt-1">Tomorrow</span>
             </h1>
 
             <p
-              class="text-base md:text-lg text-[#ede3ce]/90 leading-relaxed max-w-lg mx-auto lg:mx-0 text-balance"
+              class="text-lg sm:text-xl text-[#ede3ce]/90 leading-relaxed max-w-lg mx-auto lg:mx-0"
             >
               Premium catfish, livestock, poultry, and cassava cultivated with
-              traditional wisdom and modern innovation
+              traditional wisdom and modern innovation.
             </p>
 
             <div
-              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4"
             >
               <button
-                class="group relative px-8 py-4 bg-[#e8cfa0] text-[#1c3d27] rounded-full font-semibold hover:bg-[#d4b88a] transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                class="group relative px-8 py-4 bg-[#e8cfa0] text-[#1c3d27] rounded-full font-semibold text-base hover:bg-[#d4b88a] transition-all duration-300 hover:shadow-2xl hover:-translate-y-0.5 flex items-center justify-center gap-3"
               >
                 Explore Our Farm
                 <svg
-                  class="w-4 h-4 transition-transform group-hover:translate-x-1"
+                  class="w-5 h-5 transition-transform group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
+                  stroke-width="2.5"
                   viewBox="0 0 24 24"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
               </button>
+
               <button
-                class="px-8 py-4 text-white rounded-full font-medium border-2 border-[#d4c0a0]/50 hover:border-[#e8cfa0] hover:bg-white/5 transition-all duration-300"
+                class="px-8 py-4 text-white rounded-full font-medium border-2 border-[#d4c0a0]/60 hover:border-[#e8cfa0] hover:bg-white/10 transition-all duration-300 text-base"
               >
                 Watch Our Story
               </button>
@@ -63,106 +66,109 @@
 
             <!-- Stats -->
             <div
-              class="flex items-center justify-center lg:justify-start gap-8 pt-8 border-t border-[#d4c0a0]/30"
+              class="flex items-center justify-center lg:justify-start gap-10 pt-12 border-t border-[#d4c0a0]/30"
             >
               <div class="text-center lg:text-left">
-                <div class="text-3xl font-serif font-bold text-[#e8cfa0]">
+                <div class="text-4xl font-serif font-bold text-[#e8cfa0]">
                   50+
                 </div>
-                <div class="text-sm text-[#ede3ce]/70">Acres Cultivated</div>
-              </div>
-              <div class="w-px h-12 bg-[#d4c0a0]/30"></div>
-              <div class="text-center lg:text-left">
-                <div class="text-3xl font-serif font-bold text-[#e8cfa0]">
-                  3
+                <div class="text-sm text-[#ede3ce]/70 mt-1 tracking-wide">
+                  Acres Cultivated
                 </div>
-                <div class="text-sm text-[#ede3ce]/70">Core Sectors</div>
               </div>
-              <div class="w-px h-12 bg-[#d4c0a0]/30"></div>
+              <div class="w-px h-14 bg-[#d4c0a0]/30"></div>
               <div class="text-center lg:text-left">
-                <div class="text-3xl font-serif font-bold text-[#e8cfa0]">
-                  6
+                <div class="text-4xl font-serif font-bold text-[#e8cfa0]">
+                  4
                 </div>
-                <div class="text-sm text-[#ede3ce]/70">Years Experience</div>
+                <div class="text-sm text-[#ede3ce]/70 mt-1 tracking-wide">
+                  Core Sectors
+                </div>
+              </div>
+              <div class="w-px h-14 bg-[#d4c0a0]/30"></div>
+              <div class="text-center lg:text-left">
+                <div class="text-4xl font-serif font-bold text-[#e8cfa0]">
+                  4
+                </div>
+                <div class="text-sm text-[#ede3ce]/70 mt-1 tracking-wide">
+                  Years Experience
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Right Side: Carousel -->
-          <div class="lg:w-1/2 w-full relative flex justify-center">
-            <!-- Swiper -->
-            <swiper
-              :modules="modules"
-              :effect="'fade'"
-              :fadeEffect="{ crossFade: true }"
-              :loop="true"
-              :speed="800"
-              :autoplay="{
-                delay: 5000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }"
-              class="w-full max-w-[500px] relative"
-              @slideChange="onSlideChange"
-              @swiper="onSwiper"
-            >
-              <swiper-slide v-for="(slide, index) in slides" :key="index">
-                <div
-                  class="relative aspect-square rounded-full overflow-hidden border-4 border-white/20 group"
-                >
-                  <img
-                    :src="slide.image"
-                    :alt="slide.alt"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <!-- Gradient overlay -->
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"
-                  ></div>
+          <div
+            class="lg:w-1/2 w-full flex justify-center lg:justify-end pt-8 lg:pt-0"
+          >
+            <div class="relative w-full max-w-[480px] lg:max-w-[520px]">
+              <!-- Swiper -->
+              <swiper
+                :modules="modules"
+                :effect="'fade'"
+                :fadeEffect="{ crossFade: true }"
+                :loop="true"
+                :speed="900"
+                :autoplay="{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }"
+                class="w-full aspect-square rounded-full overflow-hidden border-8 border-white/20 shadow-2xl"
+                @slideChange="onSlideChange"
+                @swiper="onSwiper"
+              >
+                <swiper-slide v-for="(slide, index) in slides" :key="index">
+                  <div class="relative w-full h-full group">
+                    <img
+                      :src="slide.image"
+                      :alt="slide.alt"
+                      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <!-- Gradient overlay -->
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+                    ></div>
 
-                  <!-- Content -->
-                  <div
-                    class="absolute bottom-12 left-0 right-0 text-center px-8"
-                  >
-                    <p
-                      class="text-[#e8cfa0] text-sm font-medium tracking-widest uppercase mb-2"
+                    <!-- Content -->
+                    <div
+                      class="absolute bottom-10 left-0 right-0 text-center px-6"
                     >
-                      {{ slide.sector }}
-                    </p>
-                    <h3
-                      class="text-3xl md:text-4xl font-bold text-white drop-shadow-xl mb-3 px-4"
-                    >
-                      {{ slide.title }}
-                    </h3>
-                    <!-- <p class="text-white/90 text-sm font-medium">
-                      {{ slide.subtitle }}
-                    </p> -->
+                      <p
+                        class="text-[#e8cfa0] text-sm font-medium tracking-[2px] uppercase mb-2"
+                      >
+                        {{ slide.sector }}
+                      </p>
+                      <h3
+                        class="text-3xl sm:text-4xl font-bold text-white drop-shadow-2xl leading-tight"
+                      >
+                        {{ slide.title }}
+                      </h3>
+                    </div>
                   </div>
-                </div>
-              </swiper-slide>
-            </swiper>
+                </swiper-slide>
+              </swiper>
 
-            <!-- Dynamic Floating Badges -->
-            <div
-              class="absolute inset-0 pointer-events-none z-20 max-w-[500px] mx-auto"
-            >
-              <transition-group name="badge">
-                <div
-                  v-for="(badge, idx) in currentBadges"
-                  :key="badge.text"
-                  class="absolute pointer-events-auto"
-                  :class="[badge.position, badge.animation]"
-                >
+              <!-- Dynamic Floating Badges -->
+              <div class="absolute inset-0 pointer-events-none z-20">
+                <transition-group name="badge">
                   <div
-                    :class="[
-                      'px-4 py-2 rounded-full shadow-lg backdrop-blur-sm text-sm font-bold border border-white/20',
-                      badge.style,
-                    ]"
+                    v-for="(badge, idx) in currentBadges"
+                    :key="badge.text"
+                    class="absolute pointer-events-auto"
+                    :class="[badge.position, badge.animation]"
                   >
-                    {{ badge.text }}
+                    <div
+                      :class="[
+                        'px-5 py-2.5 rounded-full shadow-xl backdrop-blur-md text-sm font-semibold border border-white/30',
+                        badge.style,
+                      ]"
+                    >
+                      {{ badge.text }}
+                    </div>
                   </div>
-                </div>
-              </transition-group>
+                </transition-group>
+              </div>
             </div>
           </div>
         </div>
@@ -170,20 +176,21 @@
 
       <!-- Marquee -->
       <div
-        class="border-t border-b border-[#e8cfa0]/20 bg-[#1c3d27]/80 backdrop-blur-sm py-3 overflow-hidden bottom-0 w-full"
+        class="border-t border-b border-[#e8cfa0]/20 bg-[#1c3d27]/90 backdrop-blur-sm py-4 overflow-hidden"
       >
         <div class="flex whitespace-nowrap animate-marquee">
           <div
             v-for="(item, i) in [...marqueeItems, ...marqueeItems]"
             :key="i"
-            class="flex items-center gap-8 flex-shrink-0 pr-8"
+            class="flex items-center gap-8 flex-shrink-0 px-8"
           >
             <span
-              class="text-lg text-[#e8cfa0] tracking-widest uppercase font-medium"
-              >{{ item }}</span
+              class="text-[#e8cfa0] text-base sm:text-lg tracking-widest uppercase font-medium"
             >
+              {{ item }}
+            </span>
             <span
-              class="flex-shrink-0 rounded-full bg-[#e8cfa0] w-2 h-2"
+              class="flex-shrink-0 w-2 h-2 rounded-full bg-[#e8cfa0]"
             ></span>
           </div>
         </div>
@@ -197,12 +204,14 @@
         <div class="relative rounded-2xl overflow-hidden group">
           <NuxtImg
             src="/images/cassavaw.jpg"
-            class="w-full aspect-[4/3] md:aspect-[6/5] object-cover transition-transform duration-700 group-hover:scale-105"
+            class="w-full aspect-[5/4] md:aspect-[6/5] object-cover transition-transform duration-700 group-hover:scale-105"
           />
         </div>
 
         <!-- Content -->
-        <div class="flex flex-col">
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left gap-2"
+        >
           <p
             class="text-xs font-bold tracking-widest uppercase text-amber-600 mb-3"
           >
@@ -215,39 +224,37 @@
             Farming with Purpose, Rooted in Lagos
           </h2>
 
-          <div class="space-y-6">
-            <p class="leading-relaxed text-base md:text-lg text-primary">
-              Mckarekins Farms is nestled in the heart of Epe, Lagos one of
-              Nigeria's most fertile farming regions. Founded with a clear
-              mission: to drive economic growth, build agricultural capacity,
-              create jobs, and eradicate poverty through sustainable farming.
-              Though we have been farming for over a decade, the business was
-              formally incorporated by the Corporate Affairs Commission in May
-              2016.
+          <div class="space-y-6 text-base leading-relaxed text-primary/90">
+            <p>
+              Kinse Farms is nestled in the heart of Epe, Lagos one of Nigeria's
+              most fertile farming regions. Founded with a clear mission: to
+              drive economic growth, build agricultural capacity, create jobs,
+              and eradicate poverty through sustainable farming. Though we have
+              been farming for over a decade, the business was formally
+              incorporated by the Corporate Affairs Commission in May 2016.
             </p>
-
-            <p class="leading-relaxed text-base md:text-lg text-primary">
+            <p>
               Today, every corner of our farm is carefully managed — from our
               cattle, goats, and poultry to our thriving catfish ponds and
               expansive cassava fields. We don't just grow food; we grow
               opportunities for the communities around us.
             </p>
+          </div>
 
-            <div class="flex items-center gap-4">
-              <NuxtLink
-                to="/about"
-                class="bg-[#1c3d27] hover:bg-[#2a4a35] text-[#e8cfa0] font-semibold text-sm py-3 px-7 rounded-full transition-all duration-200 hover:-translate-y-0.5"
-              >
-                Learn More About Us →
-              </NuxtLink>
-            </div>
+          <div class="flex items-center gap-4 mt-4">
+            <NuxtLink
+              to="/about"
+              class="bg-[#1c3d27] hover:bg-[#2a4a35] text-[#e8cfa0] font-semibold text-sm py-3 px-7 rounded-full transition-all duration-200 hover:-translate-y-0.5"
+            >
+              Learn More About Us →
+            </NuxtLink>
           </div>
         </div>
       </div>
     </section>
 
     <!-- What We Offer -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
       <div class="text-center mb-12">
         <p
           class="text-sm font-bold tracking-widest uppercase text-amber-600 mb-3"
@@ -259,9 +266,7 @@
         >
           Our Products
         </h2>
-        <p
-          class="text-base leading-relaxed max-w-3xl mx-auto text-secondary/90 font-sans"
-        >
+        <p class="mt-6 text-lg text-secondary/80 max-w-2xl mx-auto">
           We integrate crops, livestock, aquaculture, to recycle resources,
           increase yields, diversify income, and strengthen food security across
           Nigeria.
@@ -393,49 +398,36 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div
-            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
+            v-for="testimonial in testimonials"
+            :key="testimonial.name"
+            class="bg-white border border-[#d4c0a0]/50 rounded-2xl p-6 hover:shadow-md transition-all duration-300"
           >
-            <p class="leading-relaxed text-base md:text-lg">
-              GreenRoot supplied our restaurant with fresh catfish every week
-              for two years. The quality is unmatched and delivery is always on
-              time. Highly recommend!
-            </p>
-            <div class="mt-6 flex items-center gap-3">
-              <div>
-                <div class="font-bold text-base lg:text-lg">Chukwuemeka O.</div>
-                <div class="text-sm lg:text-base">Restaurant Owner, Lagos</div>
-              </div>
+            <!-- Stars -->
+            <div class="flex gap-1 mb-4">
+              <span v-for="n in 5" :key="n" class="text-amber-500 text-sm"
+                >★</span
+              >
             </div>
-          </div>
 
-          <div
-            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
-          >
-            <p class="leading-relaxed text-base md:text-lg text-primary">
-              I started my own poultry farm after their advisory workshop. The
-              support and training I received was practical and life-changing.
-              My farm is thriving!
+            <p class="leading-relaxed text-base text-[#2a4a35]/80">
+              {{ testimonial.quote }}
             </p>
-            <div class="mt-6 flex items-center gap-3">
-              <div>
-                <div class="font-bold text-base lg:text-lg">Aisha M.</div>
-                <div class="text-sm lg:text-base">New Farmer, Kaduna</div>
+
+            <div
+              class="mt-6 pt-5 border-t border-[#d4c0a0]/40 flex items-center gap-3"
+            >
+              <div
+                class="w-9 h-9 rounded-full bg-[#1c3d27] flex items-center justify-center text-[#e8cfa0] text-sm font-bold flex-shrink-0"
+              >
+                {{ testimonial.initials }}
               </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white/10 backdrop-blur-sm border border-gray-500 rounded-2xl shadow-lg p-6"
-          >
-            <p class="leading-relaxed text-base md:text-lg">
-              We source all our cassava tubers and garri from GreenRoot. Their
-              bulk pricing is fair and the produce is always clean and fresh.
-              Great partnership!
-            </p>
-            <div class="mt-6 flex items-center gap-3">
               <div>
-                <div class="font-bold text-base lg:text-lg">Babatunde A.</div>
-                <div class="text-sm lg:text-base">Food Distributor, Ibadan</div>
+                <div class="font-semibold text-sm text-[#1c3d27]">
+                  {{ testimonial.name }}
+                </div>
+                <div class="text-xs text-[#2a4a35]/60">
+                  {{ testimonial.role }}
+                </div>
               </div>
             </div>
           </div>
@@ -494,11 +486,33 @@ const slides = [
     subtitle: "Non-GMO • Sustainably grown • Rich in nutrients",
   },
 ];
-
+const testimonials = [
+  {
+    quote:
+      "Kinse Farms supplied our restaurant with fresh catfish every week for two years. The quality is unmatched and delivery is always on time. Highly recommend!",
+    name: "Chukwuemeka O.",
+    role: "Restaurant Owner, Lagos",
+    initials: "CO",
+  },
+  {
+    quote:
+      "I started my own poultry farm after their advisory workshop. The support and training I received was practical and life-changing. My farm is thriving!",
+    name: "Aisha M.",
+    role: "New Farmer, Kaduna",
+    initials: "AM",
+  },
+  {
+    quote:
+      "We source all our cassava tubers and garri from Kinse Farms. Their bulk pricing is fair and the produce is always clean and fresh. Great partnership!",
+    name: "Babatunde A.",
+    role: "Food Distributor, Ibadan",
+    initials: "BA",
+  },
+];
 // Badge configurations for each slide
 const badgeConfigs = {
   0: [
-    // Poultry
+    // Poultry - Chicken
     {
       text: "Free-range",
       position: "top-[5%] right-[5%]",
@@ -506,28 +520,28 @@ const badgeConfigs = {
       animation: "animate-float",
     },
     {
-      text: "Free-Range",
+      text: "No Antibiotics",
       position: "top-[20%] left-[-5%]",
       style: "bg-[#e8cfa0] text-[#1c3d27]",
       animation: "animate-float-delayed",
     },
     {
-      text: "No Antibiotics",
+      text: "Ethically Raised",
       position: "bottom-[25%] right-[-5%]",
       style: "bg-white/95 text-[#1c3d27]",
       animation: "animate-float",
     },
     {
-      text: " Pasture-fed",
+      text: "Pasture-fed",
       position: "bottom-[5%] left-[0%]",
       style: "bg-[#2a4a35] text-white border-[#e8cfa0]/30",
       animation: "animate-float-delayed",
     },
   ],
   1: [
-    // Aquaculture
+    // Aquaculture - Catfish
     {
-      text: "🐟 Fresh Daily",
+      text: "Fresh Daily",
       position: "top-[8%] right-[0%]",
       style: "bg-white/95 text-[#1c3d27]",
       animation: "animate-float",
@@ -539,7 +553,7 @@ const badgeConfigs = {
       animation: "animate-float-delayed",
     },
     {
-      text: "Organic Feed",
+      text: "Hormone-free",
       position: "bottom-[20%] right-[-5%]",
       style: "bg-white/95 text-[#1c3d27]",
       animation: "animate-float",
@@ -552,9 +566,36 @@ const badgeConfigs = {
     },
   ],
   2: [
-    // Cassava
+    // Livestock - Ram
     {
-      text: "🌾 High Yield",
+      text: "Grass-fed",
+      position: "top-[5%] right-[5%]",
+      style: "bg-white/95 text-[#1c3d27]",
+      animation: "animate-float",
+    },
+    {
+      text: "Ethically Raised",
+      position: "top-[25%] left-[-5%]",
+      style: "bg-[#e8cfa0] text-[#1c3d27]",
+      animation: "animate-float-delayed",
+    },
+    {
+      text: "No Hormones",
+      position: "bottom-[25%] right-[-5%]",
+      style: "bg-white/95 text-[#1c3d27]",
+      animation: "animate-float",
+    },
+    {
+      text: "Farm-bred",
+      position: "bottom-[10%] left-[0%]",
+      style: "bg-[#2a4a35] text-white border-[#e8cfa0]/30",
+      animation: "animate-float-delayed",
+    },
+  ],
+  3: [
+    // Crops - Cassava
+    {
+      text: "High Yield",
       position: "top-[5%] right-[5%]",
       style: "bg-white/95 text-[#1c3d27]",
       animation: "animate-float",
@@ -572,7 +613,7 @@ const badgeConfigs = {
       animation: "animate-float",
     },
     {
-      text: "Organic",
+      text: "Sustainably Grown",
       position: "bottom-[10%] left-[0%]",
       style: "bg-[#2a4a35] text-white border-[#e8cfa0]/30",
       animation: "animate-float-delayed",

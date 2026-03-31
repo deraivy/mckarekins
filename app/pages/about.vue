@@ -32,17 +32,21 @@
         class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#e8cfa0]/30 to-transparent"
       ></div>
     </div>
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 gap-8">
       <div class="grid lg:grid-cols-12 gap-16 items-center">
         <!-- Image Grid -->
         <div class="lg:col-span-5 relative">
           <div
-            class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative group"
+            class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative group"
           >
             <img
               src="/images/about.jpg"
-              alt="Young plant in hands"
-              class="w-full h-full object-cover image-hover border rounded-3xl"
+              alt="about us"
+              loading="lazy"
+              format="webp"
+              quality="80"
+              class="w-full h-full object-cover rounded-2xl"
             />
 
             <!-- <div
@@ -72,113 +76,89 @@
             >
               Built from the Soil Up, Grown with Purpose
             </h1>
-            <p class="text-base md:text-lg text-primary leading-relaxed">
-              Mckarekins Farms is nestled in the heart of Owu-Ikosi, Lagos one
-              of Nigeria's most fertile farming belts. Founded in 2022, we were
-              established with one clear mission: to build a self-sustaining
-              agricultural enterprise that creates real economic opportunities
-              for local communities while producing clean, natural food for
-              Nigerian families.
-            </p>
-            <p class="text-base md:text-lg text-primary leading-relaxed">
-              What began as a modest catfish pond has grown into a fully
-              integrated 8-acre operation. Today we run active catfish and
-              tilapia ponds, a thriving poultry unit with broilers and layers, a
-              cassava plantation, and a growing livestock herd of cattle and
-              goats all managed with care and intention.
-            </p>
-            <p class="text-base md:text-lg text-primary leading-relaxed">
-              Our philosophy is simple: every part of the farm feeds another.
-              Poultry provides organic manure for our cassava fields. Fish ponds
-              supply water for irrigation in dry seasons. Nothing goes to waste,
-              and nothing is done halfway. Farming done right doesn't just feed
-              people it builds communities, restores land, and creates lasting
-              prosperity.
-            </p>
+            <div class="space-y-8 text-[17px] leading-relaxed text-[#2a4a35]">
+              <p>
+                Mckarekins Farms is nestled in the heart of Owu-Ikosi, Lagos one
+                of Nigeria's most fertile farming belts. Founded in 2022, we
+                were established with one clear mission: to build a
+                self-sustaining agricultural enterprise that creates real
+                economic opportunities for local communities while producing
+                clean, natural food for Nigerian families.
+              </p>
+              <p>
+                What began as a modest catfish pond has grown into a fully
+                integrated 8-acre operation. Today we run active catfish and
+                tilapia ponds, a thriving poultry unit with broilers and layers,
+                a cassava plantation, and a growing livestock herd of cattle and
+                goats all managed with care and intention.
+              </p>
+              <p>
+                Our philosophy is simple: every part of the farm feeds another.
+                Poultry provides organic manure for our cassava fields. Fish
+                ponds supply water for irrigation in dry seasons. Nothing goes
+                to waste, and nothing is done halfway. Farming done right
+                doesn't just feed people it builds communities, restores land,
+                and creates lasting prosperity.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <!--  -->
-      <div class="mt-32">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-          <!-- Mission -->
-          <div class="bg-[#1c3d27] rounded-2xl p-7">
-            <div
-              class="bg-[#e8cfa0]/15 border border-[#e8cfa0]/20 w-fit p-2.5 rounded-xl mb-4"
-            >
-              <NuxtImg src="/icons/dat.svg" class="w-8 h-8" />
-            </div>
-            <p
-              class="text-lg font-bold tracking-widest uppercase text-[#e8cfa0]/55 mb-2"
-            >
-              Our Mission
-            </p>
-
-            <p class="text-base md:text-lg text-[#ede3ce]/70 leading-relaxed">
-              We are committed to producing safe, chemical-free food through
-              integrated, sustainable farming while creating jobs, building
-              skills, and strengthening the communities around us. Every harvest
-              is a step toward a more food-secure Nigeria.
-            </p>
+      <div class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="bg-[#1c3d27] rounded-3xl p-10 text-white">
+          <div
+            class="bg-[#e8cfa0]/15 border border-[#e8cfa0]/30 w-fit p-4 rounded-2xl mb-8"
+          >
+            <NuxtImg src="/icons/dat.svg" alt="Mission" class="w-9 h-9" />
           </div>
-
-          <!-- Vision -->
-          <div class="bg-[#f5ede0] border border-[#d4c0a0]/60 rounded-2xl p-7">
-            <div
-              class="bg-[#d4c0a0]/60 border border-[#d4c0a0] w-fit p-2.5 rounded-xl mb-4"
-            >
-              <NuxtImg src="/icons/eye.svg" class="w-8 h-8" />
-            </div>
-            <p
-              class="text-lg font-bold tracking-widest uppercase text-[#c4704a] mb-2"
-            >
-              Our Vision
-            </p>
-
-            <p class="text-base md:text-lg text-[#2a4a35]/75 leading-relaxed">
-              We envision a future where Kinse Farms is the benchmark for
-              sustainable, profitable agriculture in Nigeria a model that other
-              farmers, investors, and communities can look to and replicate
-              across the region.
-            </p>
-          </div>
+          <p
+            class="uppercase tracking-[1.5px] text-[#e8cfa0]/70 text-sm font-semibold mb-4"
+          >
+            Our Mission
+          </p>
+          <p class="text-lg leading-relaxed text-[#ede3ce]">
+            We are committed to producing safe, chemical-free food through
+            integrated, sustainable farming while creating jobs, building
+            skills, and strengthening the communities around us. Every harvest
+            is a step toward a more food-secure Nigeria.
+          </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <!-- Vision -->
+        <div class="bg-[#f5ede0] border border-[#d4c0a0]/70 rounded-3xl p-10">
           <div
-            v-for="value in values"
-            :key="value.title"
-            class="bg-white border border-[#d4c0a0]/50 rounded-2xl p-5"
-            :style="{ borderTop: `3px solid ${value.color}` }"
+            class="bg-[#d4c0a0]/60 border border-[#d4c0a0] w-fit p-4 rounded-2xl mb-8"
           >
-            <div class="text-xl mb-3">{{ value.icon }}</div>
-            <h4 class="text-sm font-bold text-[#1c3d27] mb-1">
-              {{ value.title }}
-            </h4>
-            <p class="text-xs text-[#2a4a35]/68 leading-relaxed">
-              {{ value.description }}
-            </p>
+            <NuxtImg src="/icons/eye.svg" alt="Vision" class="w-9 h-9" />
           </div>
+          <p
+            class="uppercase tracking-[1.5px] text-[#c4704a] text-sm font-semibold mb-4"
+          >
+            Our Vision
+          </p>
+          <p class="text-lg leading-relaxed text-[#2a4a35]">
+            We envision a future where Mckarekins Farms becomes the benchmark
+            for sustainable, profitable agriculture in Nigeria — a model that
+            other farmers, investors, and communities can look to and replicate
+            across the region.
+          </p>
         </div>
       </div>
 
-      <section class="py-16 font-sans">
-        <!-- Header -->
+      <section class="py-32">
+        <!--  Header -->
         <div class="text-center mb-12 px-4">
-          <p
-            class="text-[10px] font-medium tracking-[0.18em] uppercase text-amber-600 mb-3"
-          >
+          <p class="text-xs font-bold tracking-widest uppercase text-amber-600">
             Our Operations
           </p>
           <h2
-            class="font-serif text-4xl md:text-5xl font-bold text-[#1c3d27] leading-tight max-w-md mx-auto mb-3"
+            class="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-bold leading-tight mb-6"
           >
             Life on the Farm
           </h2>
-          <p
-            class="text-sm text-neutral-400 font-light max-w-xs mx-auto leading-relaxed"
-          >
+          <p class="text-base text-gray-600 mx-auto leading-relaxed">
             A glimpse into our daily operations and how we raise our animals.
           </p>
         </div>
@@ -238,6 +218,8 @@
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
+              loading="lazy"
+              playsinline
               preload="metadata"
             >
               <source src="/images/chicken.mp4" type="video/mp4" />
@@ -277,6 +259,8 @@
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
               preload="metadata"
+              loading="lazy"
+              playsinline
             >
               <source src="/images/traffic.mp4" type="video/mp4" />
             </video>
@@ -314,6 +298,8 @@
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
+              loading="lazy"
+              playsinline
               preload="metadata"
             >
               <source src="/images/catfish.mp4" type="video/mp4" />
@@ -352,21 +338,16 @@
 
         <!-- Video Modal -->
         <Teleport to="body">
-          <Transition
-            enter-active-class="transition-opacity duration-200 ease-out"
-            enter-from-class="opacity-0"
-            leave-active-class="transition-opacity duration-200 ease-in"
-            leave-to-class="opacity-0"
-          >
+          <Transition name="fade">
             <div
               v-if="activeVideo"
-              class="fixed inset-0 bg-black/70 flex items-center justify-center z-[100] p-4"
+              class="fixed inset-0 bg-black/90 flex items-center justify-center z-[999] p-4"
               @click.self="closeVideo"
             >
-              <div class="relative w-full max-w-4xl">
+              <div class="relative w-full max-w-5xl">
                 <button
                   @click="closeVideo"
-                  class="absolute -top-12 right-0 text-white/80 hover:text-white text-3xl leading-none transition-colors"
+                  class="absolute -top-14 right-0 text-white text-4xl hover:text-[#e8cfa0] transition-colors"
                 >
                   ✕
                 </button>
@@ -374,8 +355,8 @@
                   :src="activeVideo"
                   controls
                   autoplay
-                  muted
-                  class="w-full aspect-video rounded-2xl"
+                  playsinline
+                  class="w-full rounded-2xl shadow-2xl"
                 />
               </div>
             </div>

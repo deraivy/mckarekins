@@ -1,18 +1,13 @@
 <template>
   <div>
-    <div class="sticky top-0 bg-[#f0ead6] z-50">
+    <div class="bg-[#f0ead6]">
       <nav
-        class="top-0 left-0 right-0 z-50 py-4 px-6 md:px-16 transition-all duration-500 border-b border-[#d4c0a0]"
+        class="top-0 left-0 right-0 z-50 px-6 md:px-16 border-b border-[#d4c0a0]"
       >
         <div class="max-w-7xl mx-auto flex items-center justify-between">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center gap-3">
-            <div>
-              <span
-                class="font-sans font-black text-cream text-xl leading-none block"
-                >Mckarekins</span
-              >
-            </div>
+            <NuxtImg src="/images/logo.svg" class="w-24 h-24" />
           </NuxtLink>
 
           <!-- Desktop Links -->
@@ -21,7 +16,7 @@
           >
             <NuxtLink to="/" class="text-base">Home</NuxtLink>
             <NuxtLink to="/about" class="text-base">About</NuxtLink>
-            <NuxtLink to="" class="text-base">Products</NuxtLink>
+
             <NuxtLink to="/contact" class="text-base">Contact</NuxtLink>
           </div>
 
@@ -74,13 +69,16 @@
 
     <slot />
 
-    <footer class="bg-[#201509] text-white pt-12 pb-8">
+    <footer class="bg-[#1c3d27] text-white pt-12 pb-8">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <!-- Company Info -->
           <div class="space-y-4">
             <div class="flex items-center">
-              <h2>Mckarekins</h2>
+              <NuxtImg
+                src="/images/logo.svg"
+                class="w-32 h-32 object-contain"
+              />
             </div>
             <p class="text-white">
               Our aim is to produce high-quality food sustainably, using
@@ -202,10 +200,9 @@
 const scrolled = ref(false);
 const menuOpen = ref(false);
 const navLinks = [
-  { label: "Home", to: "/", icon: "🏡" },
-  { label: "About", to: "/about", icon: "🌿" },
-  { label: "Products", to: "/products", icon: "🌾" },
-  { label: "Contact", to: "/contact", icon: "📞" },
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Contact", to: "/contact" },
 ];
 </script>
 
