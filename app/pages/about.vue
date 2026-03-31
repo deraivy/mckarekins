@@ -213,7 +213,7 @@
           <!-- Small 1 -->
           <div
             class="col-span-1 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#2e3a20]"
-            @click="openVideo('/videos/chicken.MP4')"
+            @click="openVideo('/videos/chick.MP4')"
           >
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
@@ -222,7 +222,7 @@
               playsinline
               preload="metadata"
             >
-              <source src="/public/videos/chicken.MP4" type="video/mp4" />
+              <source src="/videos/chick.MP4" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
