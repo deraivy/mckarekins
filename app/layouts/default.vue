@@ -76,7 +76,7 @@
           <div class="space-y-4">
             <div class="flex items-center">
               <NuxtImg
-                src="/images/logo.svg"
+                src="/images/footer.png"
                 class="w-32 h-32 object-contain"
               />
             </div>
