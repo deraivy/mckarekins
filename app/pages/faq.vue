@@ -99,7 +99,7 @@
                 loop
                 playsinline
                 class="w-full h-full object-cover"
-                src="/images/catfish.MP4"
+                src="/videos/catfish.MP4"
               ></video>
               <div
                 class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4"
