@@ -170,14 +170,14 @@
           <!-- Featured 2x2 -->
           <div
             class="col-span-2 row-span-2 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#1c2b1e]"
-            @click="openVideo('/images/cattle.mp4')"
+            @click="openVideo('/videos/cattle.mp4')"
           >
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               muted
               preload="metadata"
             >
-              <source src="/images/cattle.mp4" type="video/mp4" />
+              <source src="/videos/cattle.mp4" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-55 group-hover:opacity-100 transition-opacity duration-300"
@@ -213,7 +213,7 @@
           <!-- Small 1 -->
           <div
             class="col-span-1 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#2e3a20]"
-            @click="openVideo('/images/chicken.mp4')"
+            @click="openVideo('/videos/chicken.mp4')"
           >
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
@@ -222,7 +222,7 @@
               playsinline
               preload="metadata"
             >
-              <source src="/images/chicken.mp4" type="video/mp4" />
+              <source src="/videos/chicken.mp4" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
@@ -253,7 +253,7 @@
           <!-- Small 2 -->
           <div
             class="col-span-1 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#1e2d35]"
-            @click="openVideo('/images/traffic.mp4')"
+            @click="openVideo('/videos/traffic.mp4')"
           >
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
@@ -262,7 +262,7 @@
               loading="lazy"
               playsinline
             >
-              <source src="/images/traffic.mp4" type="video/mp4" />
+              <source src="/videos/traffic.mp4" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
@@ -293,7 +293,7 @@
           <!-- Wide 2x1 -->
           <div
             class="col-span-2 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#1a2e38]"
-            @click="openVideo('/images/catfish.mp4')"
+            @click="openVideo('/videos/catfish.mp4')"
           >
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
@@ -302,7 +302,7 @@
               playsinline
               preload="metadata"
             >
-              <source src="/images/catfish.mp4" type="video/mp4" />
+              <source src="/videos/catfish.mp4" type="video/mp4" />
             </video>
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"
