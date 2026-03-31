@@ -213,7 +213,7 @@
           <!-- Small 1 -->
           <div
             class="col-span-1 group relative overflow-hidden rounded-[20px] cursor-pointer bg-[#2e3a20]"
-            @click="openVideo('/videos/chicken.mp4')"
+            @click="openVideo('/videos/chicken.MP4')"
           >
             <video
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
