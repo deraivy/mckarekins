@@ -211,9 +211,7 @@
             Our Story
           </p>
 
-          <h2
-            class="text-3xl sm:text-4xl md:text-5xl text-primary font-bold leading-tight mb-6"
-          >
+          <h2 class="text-3xl sm:text-4xl md:text-5xl mb-6">
             Farming with Purpose,<br class="hidden sm:block" />
             Rooted in Lagos
           </h2>

@@ -42,8 +42,9 @@
               src="/images/about.jpg"
               alt="about us"
               loading="lazy"
+              sizes="sm:100vw md:50vw lg:50vw"
               format="webp"
-              quality="80"
+              quality="75"
               class="w-full h-full object-cover rounded-2xl"
             />
           </div>
@@ -157,7 +158,13 @@
                 class="w-12 h-12 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center shrink-0"
               >
                 <!-- pin icon -->
-                <NuxtImg src="/icons/dat.svg" alt="Mission" class="w-9 h-9" />
+                <NuxtImg
+                  src="/icons/dat.svg"
+                  alt="Mission"
+                  width="36"
+                  height="36"
+                  loading="lazy"
+                />
               </div>
               <span class="text-sm font-medium uppercase text-accent/70"
                 >Our mission</span
@@ -195,7 +202,12 @@
               <div
                 class="w-12 h-12 rounded-lg bg-primary flex items-center justify-center shrink-0"
               >
-                <NuxtImg src="/icons/eyee.svg" alt="Vision" class="w-9 h-9" />
+                <NuxtImg
+                  src="/icons/eyee.svg"
+                  alt="Vision"
+                  width="36"
+                  height="36"
+                />
               </div>
               <span class="text-sm font-medium uppercase text-primary"
                 >Our vision</span
