@@ -368,7 +368,6 @@
         <swiper
           :modules="modules"
           :spaceBetween="24"
-          :slidesPerView="3"
           :loop="true"
           :speed="600"
           :autoplay="{
@@ -376,6 +375,20 @@
             disableOnInteraction: false,
           }"
           :pagination="{ clickable: true }"
+          :breakpoints="{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 16,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+          }"
           class="w-full"
         >
           <swiper-slide
@@ -479,7 +492,7 @@ const slides = [
     image: "/images/chicken.jpg",
     alt: "Free-range chickens grazing on lush green pasture at Mckarekins Farms",
     sector: "Poultry",
-    title: "Free-Range Chicken",
+    title: "Chicken",
   },
   {
     image: "/images/catfish.jpg",
@@ -497,7 +510,7 @@ const slides = [
     image: "/images/cassava.jpg",
     alt: "High-yield cassava roots harvested from fertile farmland at Mckarekins Farms",
     sector: "Crops",
-    title: "Premium Cassava",
+    title: " Cassava",
   },
 ];
 
