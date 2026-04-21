@@ -48,14 +48,14 @@
       <div class="w-10 h-0.5 bg-accent/25 rounded my-6"></div>
     </div>
 
-    <span
+    <!-- <span
       v-for="leaf in leavesData"
       :key="leaf.id"
       class="leaf absolute top-0 pointer-events-none select-none"
       :style="leaf.style"
     >
       {{ leaf.char }}
-    </span>
+    </span> -->
   </div>
 </template>
 

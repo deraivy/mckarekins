@@ -24,7 +24,7 @@
 
             <!-- H1 — font-serif, tight leading, tracking-tight -->
             <h1
-              class="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white"
+              class="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-white"
             >
               Farming for a Better
               <span class="text-accent block mt-1">Tomorrow</span>
@@ -44,7 +44,7 @@
             >
               <NuxtLink
                 to="/products"
-                class="group relative px-8 py-4 bg-accent text-primary rounded-full font-semibold text-base hover:bg-[#d4b88a] transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-3"
+                class="group relative px-8 py-3 bg-accent text-primary rounded-full font-semibold text-base hover:bg-[#d4b88a] transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-3"
               >
                 Explore Our Farm
                 <svg
@@ -63,7 +63,7 @@
               </NuxtLink>
               <NuxtLink
                 to="/about"
-                class="px-8 py-4 text-accent rounded-full font-medium border-2 border-accent/40 hover:border-accent hover:bg-white/10 transition-all duration-300 text-base text-center"
+                class="px-8 py-3 text-accent rounded-full font-medium border-2 border-accent/40 hover:border-accent hover:bg-white/10 transition-all duration-300 text-base text-center"
               >
                 Our Story
               </NuxtLink>
@@ -658,7 +658,7 @@ const services = [
     title: "Livestock Farming",
     description:
       "Healthy cattle, goats, and other livestock raised naturally. Reliable supply of live animals and quality meat to families, butchers, and markets across the region.",
-    icon: "emojione-monotone:goat",
+    icon: "fluent-emoji-high-contrast:goat",
     background:
       "linear-gradient(135deg, #5D4037 0%, #8D6E63 35%, #BCAAA4 100%)",
   },

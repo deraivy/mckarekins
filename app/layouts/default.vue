@@ -38,16 +38,6 @@
           >
         </div>
 
-        <!-- CTA -->
-        <!-- <a
-          href="https://api.whatsapp.com/send?phone=+2349136230385&text=Hello,%20I%20need%20your%20services"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hidden md:inline-flex items-center gap-2 bg-gradient-to-br from-[#1c3d27] via-[#234d32] to-[#2a4a35] text-white font-bold px-6 py-3 rounded-full text-sm hover:shadow-lg hover:scale-105 transition-all duration-300"
-        >
-          Get In Touch
-        </a> -->
-
         <!-- Hamburger -->
         <button
           @click="menuOpen = !menuOpen"
@@ -62,7 +52,7 @@
       <transition name="mobile-menu">
         <div
           v-if="menuOpen"
-          class="md:hidden absolute inset-x-0 top-full bg-[#f0ead6]/98 backdrop-blur-md border-t border-[#d4c0a0]/60 shadow-xl rounded-b-2xl overflow-hidden"
+          class="md:hidden absolute inset-x-0 top-full bg-[#f0ead6] backdrop-blur-md border-t border-[#d4c0a0]/60 shadow-xl rounded-b-2xl overflow-hidden"
         >
           <ul class="flex flex-col px-4 py-3 gap-1">
             <li v-for="link in navLinks" :key="link.label">
