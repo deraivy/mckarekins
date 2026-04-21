@@ -9,7 +9,12 @@
       >
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center gap-3">
-          <NuxtImg src="/images/logo.svg" class="w-28 h-[160px]" />
+          <img
+            src="/images/logo.svg"
+            alt="Mckarekins logo"
+            width="112"
+            height="160"
+          />
         </NuxtLink>
 
         <!-- Desktop Links -->
@@ -101,7 +106,7 @@
 
           <!-- Quick Links -->
           <div class="space-y-4">
-            <h3 class="text-lg font-semibold">Quick Links</h3>
+            <h3 class="text-lg text-clay">Quick Links</h3>
             <ul class="space-y-2">
               <li>
                 <NuxtLink to="/" class="text-clay hover:text-accent transition"
@@ -141,7 +146,7 @@
 
           <!-- Services -->
           <div class="space-y-4">
-            <h3 class="text-lg font-semibold">Services</h3>
+            <h3 class="text-lg text-clay">Products</h3>
             <ul class="space-y-2">
               <li>
                 <NuxtLink to="/" class="text-clay hover:text-accent transition"
@@ -178,7 +183,7 @@
 
           <!-- Contact -->
           <div class="space-y-4">
-            <h3 class="text-lg font-semibold">Contact Us</h3>
+            <h3 class="text-lg text-clay">Contact Us</h3>
             <address class="not-italic text-clay">
               <p>Plot 5 - 15 Old Lagos Road,</p>
               <p>Iganke Junction,</p>
@@ -205,22 +210,11 @@
         </div>
 
         <div
-          class="border-t border-[#d4c0a0]/50 pt-6 flex flex-col md:flex-row justify-between items-center"
+          class="border-t border-[#d4c0a0]/50 pt-6 flex justify-center items-center"
         >
           <p class="text-clay text-sm mb-4 md:mb-0">
             © 2026 Mckarekins. All rights reserved.
           </p>
-          <div class="flex space-x-6">
-            <a href="#" class="text-clay hover:text-accent text-sm transition"
-              >Privacy Policy</a
-            >
-            <a href="#" class="text-clay hover:text-accent text-sm transition"
-              >Terms of Service</a
-            >
-            <a href="#" class="text-clay hover:text-accent text-sm transition"
-              >Cookies</a
-            >
-          </div>
         </div>
       </div>
     </footer>

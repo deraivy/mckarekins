@@ -43,7 +43,7 @@
               class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <NuxtLink
-                to="/products"
+                to="/services"
                 class="group relative px-8 py-3 bg-accent text-primary rounded-full font-semibold text-base hover:bg-[#d4b88a] transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-3"
               >
                 Explore Our Farm
