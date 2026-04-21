@@ -28,7 +28,9 @@
 
       <!-- Text -->
       <p class="eyebrow" style="--d: 4">Lost in the fields</p>
-      <h1 class="heading" style="--d: 5">This page wandered off</h1>
+      <h1 class="heading text-primary" style="--d: 5">
+        This page wandered off
+      </h1>
       <p class="body" style="--d: 6">
         Looks like this path leads nowhere on our farm.<br />
         Let's get you back to solid ground.
@@ -50,7 +52,6 @@
           </svg>
           Back to home
         </NuxtLink>
-        <NuxtLink to="/products" class="btn-ghost">Browse products</NuxtLink>
       </div>
     </main>
 
@@ -72,7 +73,7 @@ useHead({
 
 .not-found {
   min-height: 100vh;
-  background: #0a0a08;
+  background: #f0ead6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +153,7 @@ useHead({
   font-size: clamp(7rem, 18vw, 14rem);
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.12);
+  -webkit-text-stroke: 2px black;
   letter-spacing: -0.02em;
   animation: digit-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: calc(var(--d) * 0.1s);
@@ -171,7 +172,7 @@ useHead({
   position: absolute;
   width: clamp(4.5rem, 11vw, 8.5rem);
   height: clamp(4.5rem, 11vw, 8.5rem);
-  border: 1px solid rgba(217, 119, 6, 0.35);
+  border: 2px solid rgba(217, 119, 6, 0.35);
   border-radius: 50%;
   animation:
     ring-spin 20s linear infinite,
@@ -181,7 +182,7 @@ useHead({
 }
 
 .zero-digit {
-  -webkit-text-stroke: 1px rgba(217, 119, 6, 0.5);
+  -webkit-text-stroke: 2px rgba(217, 119, 6, 0.5);
 }
 
 /* Divider */
@@ -225,7 +226,7 @@ useHead({
   font-family: "Playfair Display", serif;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 400;
-  color: #f5f0e8;
+  color: #1c3d27;
   line-height: 1.2;
   margin: 0 0 1rem;
   animation: fade-up 0.7s ease forwards;
@@ -236,7 +237,7 @@ useHead({
 /* Body */
 .body {
   font-size: 0.95rem;
-  color: rgba(245, 240, 232, 0.4);
+  color: gray;
   line-height: 1.75;
   font-weight: 300;
   margin: 0 0 2.5rem;
@@ -262,8 +263,8 @@ useHead({
   align-items: center;
   gap: 8px;
   padding: 0.65rem 1.4rem;
-  background: #d97706;
-  color: #0a0a08;
+  background: #1c3d27;
+  color: white;
   font-size: 0.85rem;
   font-weight: 500;
   font-family: "DM Sans", sans-serif;

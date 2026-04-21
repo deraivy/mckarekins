@@ -4,11 +4,11 @@
       class="relative h-48 md:h-64 flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       <div
-        class="absolute inset-0 bg-gradient-to-br from-[#1c3d27] via-[#234d32] to-[#2a4a35]"
+        class="absolute inset-0 bg-gradient-to-br from-primary via-[#234d32] to-secondary"
       ></div>
 
       <div
-        class="absolute inset-0 bg-gradient-to-tr from-[#e8cfa0]/5 via-transparent to-transparent"
+        class="absolute inset-0 bg-gradient-to-tr from-accent/5 via-transparent to-transparent"
       ></div>
 
       <div
@@ -16,20 +16,18 @@
       ></div>
 
       <div class="relative z-10 text-center">
-        <h2
-          class="text-3xl md:text-4xl font-serif font-bold text-[#f6efdf] tracking-tight"
-        >
-          About <span class="text-[#e8cfa0]">Us</span>
+        <h2 class="text-3xl md:text-4xl text-accent tracking-tight">
+          About Us
         </h2>
         <div class="mt-2 flex items-center justify-center gap-2">
-          <div class="h-px w-8 bg-[#e8cfa0]/40"></div>
-          <div class="w-1.5 h-1.5 rounded-full bg-[#e8cfa0]"></div>
-          <div class="h-px w-8 bg-[#e8cfa0]/40"></div>
+          <div class="h-px w-8 bg-accent/40"></div>
+          <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
+          <div class="h-px w-8 bg-accent/40"></div>
         </div>
       </div>
 
       <div
-        class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#e8cfa0]/30 to-transparent"
+        class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent/30 to-transparent"
       ></div>
     </div>
 
@@ -40,7 +38,7 @@
           <div
             class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative group"
           >
-            <img
+            <NuxtImg
               src="/images/about.jpg"
               alt="about us"
               loading="lazy"
@@ -48,15 +46,6 @@
               quality="80"
               class="w-full h-full object-cover rounded-2xl"
             />
-
-            <!-- <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-moss-900/90 via-moss-900/50 to-transparent p-8"
-            >
-              <p class="text-white font-serif text-xl italic">
-                "The beginning of everything"
-              </p>
-              <p class="text-moss-200 text-sm mt-2">2018</p>
-            </div> -->
           </div>
         </div>
 
@@ -66,39 +55,46 @@
           style="transition-delay: 100ms"
         >
           <div class="flex flex-col gap-5">
-            <p
-              class="text-xs font-bold tracking-widest uppercase text-amber-600"
-            >
+            <p class="text-xs tracking-widest uppercase text-amber-600">
               Our Story
             </p>
+
             <h1
-              class="font-serif text-3xl sm:text-4xl lg:text-5xl max-w-lg font-bold text-[#1c3d27] leading-tight"
+              class="text-3xl sm:text-4xl lg:text-5xl text-primary tracking-tight max-w-lg"
             >
-              Built from the Soil Up, Grown with Purpose
+              <span class="block">
+                Rooted in
+                <em class="font-normal italic text-amber-600"> purpose.</em>
+              </span>
+              <span class="block"> Growing with intention </span>
             </h1>
-            <div class="space-y-8 text-[17px] leading-relaxed text-[#2a4a35]">
+            <div class="space-y-4 text-secondary">
               <p>
-                Mckarekins Farms is nestled in the heart of Owu-Ikosi, Lagos one
-                of Nigeria's most fertile farming belts. Founded in 2022, we
-                were established with one clear mission: to build a
-                self-sustaining agricultural enterprise that creates real
-                economic opportunities for local communities while producing
-                clean, natural food for Nigerian families.
-              </p>
-              <p>
-                What began as a modest catfish pond has grown into a fully
-                integrated 8-acre operation. Today we run active catfish and
-                tilapia ponds, a thriving poultry unit with broilers and layers,
-                a cassava plantation, and a growing livestock herd of cattle and
-                goats all managed with care and intention.
-              </p>
-              <p>
-                Our philosophy is simple: every part of the farm feeds another.
-                Poultry provides organic manure for our cassava fields. Fish
-                ponds supply water for irrigation in dry seasons. Nothing goes
-                to waste, and nothing is done halfway. Farming done right
-                doesn't just feed people it builds communities, restores land,
+                Nestled in the heart of Owu-Ikosi, Epe, Lagos one of Nigeria's
+                most fertile farming belts. Mckarekins Farms was born from a
+                simple but powerful conviction: that agriculture, done right,
+                doesn't just feed people. It builds communities, restores land,
                 and creates lasting prosperity.
+              </p>
+              <p>
+                What started as a modest catfish pond has grown into something
+                far greater a fully integrated 8-acre operation where every
+                element of the farm is in conversation with the next. We didn't
+                set out to build something big. We set out to build something
+                right.
+              </p>
+              <p>
+                Today, Mckarekins Farms runs active catfish ponds, a thriving
+                poultry unit with both broilers and layers, a cassava plantation
+                in full growth, and a livestock herd of cattle and goats all
+                managed with the same care and deliberateness that marked our
+                very first day.
+              </p>
+              <p>
+                Every part of the farm feeds another. Poultry provides organic
+                manure for our cassava fields. Fish ponds supply water for
+                irrigation in dry seasons. Nothing goes to waste, and nothing is
+                done halfway.
               </p>
             </div>
           </div>
@@ -106,15 +102,15 @@
       </div>
 
       <!--  -->
-      <div class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div class="bg-[#1c3d27] rounded-3xl p-10 text-white">
+      <!-- <div class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="bg-primary rounded-3xl p-10 text-white">
           <div
-            class="bg-[#e8cfa0]/15 border border-[#e8cfa0]/30 w-fit p-4 rounded-2xl mb-8"
+            class="bg-accent/15 border border-accent/30 w-fit p-4 rounded-2xl mb-8"
           >
             <NuxtImg src="/icons/dat.svg" alt="Mission" class="w-9 h-9" />
           </div>
           <p
-            class="uppercase tracking-[1.5px] text-[#e8cfa0]/70 text-sm font-semibold mb-4"
+            class="uppercase tracking-[1.5px] text-accent/70 text-sm font-semibold mb-4"
           >
             Our Mission
           </p>
@@ -126,7 +122,6 @@
           </p>
         </div>
 
-        <!-- Vision -->
         <div class="bg-[#f5ede0] border border-[#d4c0a0]/70 rounded-3xl p-10">
           <div
             class="bg-[#d4c0a0]/60 border border-[#d4c0a0] w-fit p-4 rounded-2xl mb-8"
@@ -138,27 +133,107 @@
           >
             Our Vision
           </p>
-          <p class="text-lg leading-relaxed text-[#2a4a35]">
+          <p class="text-lg leading-relaxed text-secondary">
             We envision a future where Mckarekins Farms becomes the benchmark
             for sustainable, profitable agriculture in Nigeria — a model that
             other farmers, investors, and communities can look to and replicate
             across the region.
           </p>
         </div>
-      </div>
+      </div> -->
+
+      <section class="mt-32">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <!-- Mission -->
+          <div
+            class="relative overflow-hidden rounded-2xl bg-primary p-8 flex flex-col"
+          >
+            <div
+              class="absolute bottom-0 right-0 w-32 h-32 rounded-full bg-[#97C459]/5 translate-x-8 translate-y-8"
+            ></div>
+
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-12 h-12 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center shrink-0"
+              >
+                <!-- pin icon -->
+                <NuxtImg src="/icons/dat.svg" alt="Mission" class="w-9 h-9" />
+              </div>
+              <span class="text-sm font-medium uppercase text-accent/70"
+                >Our mission</span
+              >
+            </div>
+
+            <h3 class="text-2xl text-[#f5f0e8] mb-4">
+              Feed families.<br />Build communities.
+            </h3>
+            <p class="text-[#f5f0e8]/60 mb-6 flex-1">
+              To produce clean, natural food through integrated, zero-waste
+              farming — while creating sustainable economic opportunities for
+              local communities across Nigeria.
+            </p>
+
+            <div
+              class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#97C459]/10 border border-[#97C459]/20"
+            >
+              <span class="w-1.5 h-1.5 rounded-full bg-[#97C459]"></span>
+              <span class="text-xs font-medium text-[#97C459]"
+                >Owu-Ikosi, Lagos</span
+              >
+            </div>
+          </div>
+
+          <!-- Vision -->
+          <div
+            class="relative overflow-hidden rounded-2xl bg-[#d4c0a0]/60 border border-[#d4c0a0] p-8 flex flex-col"
+          >
+            <div
+              class="absolute bottom-0 right-0 w-32 h-32 rounded-full bg-primary/5 translate-x-8 translate-y-8"
+            ></div>
+
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-12 h-12 rounded-lg bg-primary flex items-center justify-center shrink-0"
+              >
+                <NuxtImg src="/icons/eyee.svg" alt="Vision" class="w-9 h-9" />
+              </div>
+              <span class="text-sm font-medium uppercase text-primary"
+                >Our vision</span
+              >
+            </div>
+
+            <h3 class="text-2xl text-primary mb-4">
+              A model for<br />African agriculture.
+            </h3>
+            <p class="text-primary/80 mb-6 flex-1">
+              To become West Africa's most trusted model of integrated,
+              community-rooted agriculture — where every farm decision restores
+              land, empowers people, and nourishes families for generations to
+              come.
+            </p>
+
+            <div
+              class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-primary"
+            >
+              <span class="w-1.5 h-1.5 rounded-full bg-[#97C459]"></span>
+              <span class="text-xs font-medium text-[#97C459]"
+                >Est. 2022 · Growing forward</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="py-32">
         <!--  Header -->
         <div class="text-center mb-12 px-4">
-          <p class="text-xs font-bold tracking-widest uppercase text-amber-600">
+          <p class="text-xs tracking-widest uppercase text-amber-600">
             Our Operations
           </p>
-          <h2
-            class="font-serif text-3xl sm:text-4xl md:text-5xl text-primary font-bold leading-tight mb-6"
-          >
+          <h2 class="text-3xl sm:text-4xl md:text-5xl text-primary mb-6">
             Life on the Farm
           </h2>
-          <p class="text-base text-gray-600 mx-auto leading-relaxed">
+          <p class="mx-auto">
             A glimpse into our daily operations and how we raise our animals.
           </p>
         </div>
@@ -196,14 +271,10 @@
                 class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
                 >Featured</span
               >
-              <h3
-                class="font-serif text-[26px] font-semibold text-white leading-tight"
-              >
+              <h3 class="text-[26px] font-semibold text-white">
                 Free-Range Chickens
               </h3>
-              <p
-                class="text-[13px] text-white/70 font-light mt-1.5 leading-relaxed"
-              >
+              <p class="text-[13px] text-white/70 mt-1.5 leading-relaxed">
                 Follow our flock from morning feeding to evening roost
               </p>
             </div>
@@ -239,9 +310,7 @@
                 class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
                 >Kitchen</span
               >
-              <h4
-                class="font-serif text-[18px] font-semibold text-white leading-tight"
-              >
+              <h4 class="text-[18px] font-semibold text-white">
                 Culinary Delights
               </h4>
             </div>
@@ -277,9 +346,7 @@
                 class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
                 >Innovation</span
               >
-              <h4
-                class="font-serif text-[18px] font-semibold text-white leading-tight"
-              >
+              <h4 class="text-[18px] font-semibold text-white">
                 Tech on the Farm
               </h4>
             </div>
@@ -315,14 +382,10 @@
                 class="block text-[10px] font-medium tracking-[0.12em] uppercase text-white/60 mb-1.5"
                 >Aquaculture</span
               >
-              <h4
-                class="font-serif text-[20px] font-semibold text-white leading-tight"
-              >
+              <h4 class="text-[20px] font-semibold text-white">
                 Catfish Ponds
               </h4>
-              <p
-                class="text-[13px] text-white/70 font-light mt-1.5 leading-relaxed"
-              >
+              <p class="text-[13px] text-white/70 mt-1.5 leading-relaxed">
                 Sustainable fish farming from fingerling to harvest
               </p>
             </div>
@@ -340,7 +403,7 @@
               <div class="relative w-full max-w-5xl">
                 <button
                   @click="closeVideo"
-                  class="absolute -top-14 right-0 text-white text-4xl hover:text-[#e8cfa0] transition-colors"
+                  class="absolute -top-14 right-0 text-white text-4xl hover:text-accent transition-colors"
                 >
                   ✕
                 </button>
@@ -356,7 +419,7 @@
           </Transition>
         </Teleport>
       </section>
-      <banner class="mt-24" />
+      <banner class="" />
     </div>
   </div>
 </template>

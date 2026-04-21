@@ -1,31 +1,73 @@
+/* ── Fonts ──────────────────────────────────────────────────────────────────
+   Load italic + weight 300 for Inter, italic axis for Playfair Display
+   ────────────────────────────────────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap");
+
+/* ── Base ───────────────────────────────────────────────────────────────────
+   Set body font, size, line-height, base colour, and font smoothing
+   ────────────────────────────────────────────────────────────────────────── */
 body {
   background-color: #f0ead6;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #1c3d27;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.mini-tag {
-  @apply pointer-events-auto; /* allow interaction if needed */
-  @apply inline-flex items-center justify-center px-5 py-2 text-xs md:text-sm font-semibold tracking-wide
-           text-white bg-white/30 backdrop-blur-2xl rounded-full shadow-xl
-           border-2 border-white/60
-           whitespace-nowrap transition-all duration-500;
+/* ── Headings ───────────────────────────────────────────────────────────────
+   font-serif → Playfair Display only
+   ────────────────────────────────────────────────────────────────────────── */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #1c3d27;
+}
 
-  /* Double border / glow effect */
+/* ── Paragraphs ─────────────────────────────────────────────────────────────
+   font-sans → Inter for all body copy
+   ────────────────────────────────────────────────────────────────────────── */
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: inherit;
+}
+
+/* ── Glass pill badge ───────────────────────────────────────────────────────
+   Reduced backdrop-blur from 2xl (40px) → md (12px) for mobile GPU perf
+   ────────────────────────────────────────────────────────────────────────── */
+.mini-tag {
+  @apply pointer-events-auto;
+  @apply inline-flex items-center justify-center px-5 py-2
+         text-xs md:text-sm font-semibold tracking-wide
+         text-white bg-white/30 backdrop-blur-md rounded-full
+         border-2 border-white/60
+         whitespace-nowrap transition-all duration-500;
+
   box-shadow:
     0 0 0 4px rgba(255, 255, 255, 0.15),
     0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .group:hover .mini-tag {
-  @apply scale-110 bg-white/45 border-white/85 shadow-2xl;
+  @apply scale-110 bg-white/45 border-white/85;
   box-shadow:
     0 0 0 6px rgba(255, 255, 255, 0.28),
     0 12px 28px rgba(0, 0, 0, 0.4);
 }
 
+/* ── Swiper overrides ───────────────────────────────────────────────────────*/
 :deep(.swiper) {
   overflow: visible !important;
 }
-
 :deep(.swiper-slide) {
   border-radius: 50%;
   overflow: hidden;
@@ -42,23 +84,19 @@ body {
   color: white;
   transition: all 0.3s ease;
 }
-
 :deep(.swiper-button-prev:hover),
 :deep(.swiper-button-next:hover) {
   background: rgba(232, 207, 160, 0.2);
   transform: scale(1.1);
 }
-
 :deep(.swiper-button-prev::after),
 :deep(.swiper-button-next::after) {
   font-size: 18px;
   font-weight: bold;
 }
-
 :deep(.swiper-button-prev) {
   left: -20px;
 }
-
 :deep(.swiper-button-next) {
   right: -20px;
 }
@@ -66,7 +104,6 @@ body {
 :deep(.swiper-pagination) {
   bottom: -30px !important;
 }
-
 :deep(.swiper-pagination-bullet) {
   background: #d4c0a0;
   opacity: 0.4;
@@ -74,7 +111,6 @@ body {
   height: 10px;
   transition: all 0.3s ease;
 }
-
 :deep(.swiper-pagination-bullet-active) {
   background: #e8cfa0;
   opacity: 1;
@@ -82,7 +118,9 @@ body {
   border-radius: 5px;
 }
 
-/* Badge animations */
+/* ── Float animations ───────────────────────────────────────────────────────
+   Added will-change: transform for GPU compositing
+   ────────────────────────────────────────────────────────────────────────── */
 @keyframes float {
   0%,
   100% {
@@ -92,7 +130,6 @@ body {
     transform: translateY(-10px) rotate(1deg);
   }
 }
-
 @keyframes float-delayed {
   0%,
   100% {
@@ -105,26 +142,28 @@ body {
 
 .animate-float {
   animation: float 4s ease-in-out infinite;
+  will-change: transform;
 }
-
 .animate-float-delayed {
   animation: float-delayed 3.5s ease-in-out infinite;
   animation-delay: 0.5s;
+  will-change: transform;
 }
 
-/* Badge transitions */
+/* ── Badge transitions ──────────────────────────────────────────────────────*/
 .badge-enter-active,
 .badge-leave-active {
   transition: all 0.5s ease;
 }
-
 .badge-enter-from,
 .badge-leave-to {
   opacity: 0;
   transform: scale(0.8) translateY(10px);
 }
 
-/* Marquee animation */
+/* ── Marquee ────────────────────────────────────────────────────────────────
+   Slowed from 30s → 40s — less frantic on wide screens
+   ────────────────────────────────────────────────────────────────────────── */
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -133,7 +172,22 @@ body {
     transform: translateX(-50%);
   }
 }
-
 .animate-marquee {
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+
+/* ── Accessibility — reduced motion ─────────────────────────────────────────
+   Respects OS setting. Required for WCAG 2.1 AA (2.3.3)
+   ────────────────────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-delayed,
+  .animate-marquee {
+    animation: none;
+  }
+  .badge-enter-active,
+  .badge-leave-active {
+    transition: none;
+  }
 }
