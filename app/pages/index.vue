@@ -118,9 +118,12 @@
               >
                 <swiper-slide v-for="(slide, index) in slides" :key="index">
                   <div class="relative w-full h-full group">
-                    <img
+                    <NuxtImg
                       :src="slide.image"
                       :alt="slide.alt"
+                      sizes="40vw"
+                      format="webp"
+                      quality="75"
                       class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div
@@ -191,6 +194,9 @@
           <NuxtImg
             src="/images/cassavaw.jpg"
             alt="Cassava field at Mckarekins Farms, Owu-Ikosi, Epe, Lagos"
+            sizes="sm:100vw md:50vw lg:40vw"
+            format="webp"
+            quality="75"
             class="w-full aspect-[5/4] md:aspect-[6/5] object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none"
           />
         </div>
