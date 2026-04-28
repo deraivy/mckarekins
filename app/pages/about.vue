@@ -79,10 +79,10 @@
               </p>
               <p>
                 What started as a modest catfish pond has grown into something
-                far greater a fully integrated 8-acre operation where every
-                element of the farm is in conversation with the next. We didn't
-                set out to build something big. We set out to build something
-                right.
+                far greater. Today, it is a fully integrated 10-acre operation
+                where every element of the farm is in conversation with the
+                next. We didn't set out to build something big. We set out to
+                build something right.
               </p>
               <p>
                 Today, Mckarekins Farms runs active catfish ponds, a thriving

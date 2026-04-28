@@ -2,18 +2,32 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxt/image", "@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxt/fonts",
+    "@nuxt/icon",
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/sitemap",
+  ],
   css: ["./styles/main.css"],
   app: {
     head: {
-      title: "Mckarekins",
+      title: "Mckarekins Farms | Epe, Lagos",
       meta: [
         {
           name: "description",
-          content: "",
+          content:
+            "Mckarekins Farms is a sustainable agriculture business located in Epe, Lagos, Nigeria. We are committed to producing safe, chemical-free food through integrated, sustainable farming while creating jobs, building skills, and strengthening the communities around us.",
         },
       ],
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
     },
+  },
+  site: {
+    url: "https://mckarekinsfarm.ng", // ← Very important
+  },
+  sitemap: {
+    autoLastmod: true,
   },
   image: {
     // Generates modern formats (webp, avif) automatically

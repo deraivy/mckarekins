@@ -74,7 +74,7 @@
               class="flex items-center justify-center lg:justify-start gap-10 pt-12 border-t border-[#d4c0a0]/30"
             >
               <div class="text-center lg:text-left">
-                <div class="text-4xl font-bold text-accent">8</div>
+                <div class="text-4xl font-bold text-accent">10</div>
                 <div class="text-sm text-white/60 mt-1 tracking-wide">
                   Acres of Farm
                 </div>
@@ -218,15 +218,15 @@
 
           <div class="space-y-4 text-secondary">
             <p class="">
-              Nestled in the heart of Owu-Ikosi, Epe, Lagos — one of Nigeria's
-              most fertile farming belts. Mckarekins Farms was born from a
-              simple but powerful conviction: that agriculture, done right,
-              doesn't just feed people. It builds communities, restores land,
-              and creates lasting prosperity.
+              Born in the heart of Owu-Ikosi, Epe, Lagos, one of Nigeria's most
+              fertile farming belts, Mckarekins Farms stands on a simple but
+              powerful conviction: that agriculture, done right, doesn't just
+              feed people. It builds communities, restores land, and creates
+              lasting prosperity.
             </p>
             <p class="">
               What started as a modest catfish pond has grown into something far
-              greater — a fully integrated 8-acre operation where every element
+              greater — a fully integrated 10-acre operation where every element
               of the farm is in conversation with the next. We didn't set out to
               build something big. We set out to build something right.
             </p>
@@ -450,8 +450,8 @@ useSeoMeta({
   ogTitle: "Mckarekins Farms — Fresh from the Farm to Your Table",
   ogDescription:
     "Premium catfish, poultry, livestock, and cassava from our integrated farm in Owu-Ikosi, Lagos. Community-rooted. Chemical-free. Order today.",
-  ogImage: "https://mckarekinfarms.com/images/og-home.jpg",
-  ogUrl: "https://mckarekinfarms.com",
+  ogImage: "https://karekinsfc.com/og-home.jpg",
+  ogUrl: "https://karekinsfc.com/",
   ogType: "website",
   ogSiteName: "Mckarekins Farms",
   ogLocale: "en_NG",
@@ -462,7 +462,7 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: "canonical", href: "https://mckarekinfarms.com" }],
+  link: [{ rel: "canonical", href: "https://karekinsfc.com/" }],
   meta: [
     {
       name: "keywords",
