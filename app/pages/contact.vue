@@ -252,8 +252,8 @@ const sendEmail = (e) => {
       e.target.reset();
     })
     .catch((error) => {
-      console.error(error);
-      alert("Failed to send message");
+      console.error("EmailJS error:", error);
+      alert("Failed to send message. Please try again.");
     });
 };
 </script>
