@@ -1,7 +1,7 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+
   modules: [
     "@nuxt/fonts",
     "@nuxt/icon",
@@ -9,37 +9,43 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/sitemap",
   ],
+
   css: ["./styles/main.css"],
+
   app: {
     head: {
       title: "Mckarekins Farms Nigeria | Sustainable Agriculture in Epe, Lagos",
+
       meta: [
         {
           name: "description",
           content:
-            "Mckarekins Farms is a sustainable agriculture business in Epe, Lagos, Nigeria. We sell and supply goats, catfish, cassava, cattle, and cows, providing fresh, chemical-free farm produce and livestock.",
+            "Mckarekins Farms is an integrated agricultural farm in Owu-Ikosi, Epe, Lagos. We produce and supply fresh catfish, broiler chicken, eggs, goats, cattle, and cassava — chemical-free and sustainably raised.",
         },
         {
-          name: "keywords",
-          content:
-            "Mckarekins Farms, goat farming Nigeria, catfish farm Lagos, cassava supply, cattle farming, cow export Nigeria, agriculture Epe Lagos",
+          name: "robots",
+          content: "index, follow",
         },
       ],
     },
   },
+
+  // IMPORTANT: ensures correct base URL for SEO + sitemap
   site: {
     url: "https://mckarekinsfarm.ng",
   },
+
   sitemap: {
     autoLastmod: true,
   },
+
   nitro: {
     prerender: {
       routes: ["/sitemap.xml"],
     },
   },
+
   image: {
-    // Generates modern formats (webp, avif) automatically
     format: ["webp", "avif"],
     quality: 80,
     screens: {
