@@ -29,6 +29,11 @@ export default defineNuxtConfig({
   sitemap: {
     autoLastmod: true,
   },
+  nitro: {
+    prerender: {
+      routes: ["/sitemap.xml"],
+    },
+  },
   image: {
     // Generates modern formats (webp, avif) automatically
     format: ["webp", "avif"],
