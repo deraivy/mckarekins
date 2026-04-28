@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: "https://mckarekinsfarm.ng", // ← Very important
+    url: "https://mckarekinsfarm.ng",
   },
   sitemap: {
     autoLastmod: true,

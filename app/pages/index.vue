@@ -450,8 +450,8 @@ useSeoMeta({
   ogTitle: "Mckarekins Farms — Fresh from the Farm to Your Table",
   ogDescription:
     "Premium catfish, poultry, livestock, and cassava from our integrated farm in Owu-Ikosi, Lagos. Community-rooted. Chemical-free. Order today.",
-  ogImage: "https://karekinsfc.com/og-home.jpg",
-  ogUrl: "https://karekinsfc.com/",
+  ogImage: "https://mckarekinsfarm.ng/og-home.jpg",
+  ogUrl: "https://mckarekinsfarm.ng/",
   ogType: "website",
   ogSiteName: "Mckarekins Farms",
   ogLocale: "en_NG",
@@ -462,7 +462,7 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: "canonical", href: "https://karekinsfc.com/" }],
+  link: [{ rel: "canonical", href: "https://mckarekinsfarm.ng" }],
   meta: [
     {
       name: "keywords",
