@@ -230,6 +230,83 @@ const navLinks = [
   { label: "Products", to: "/services" },
   { label: "Contact", to: "/contact" },
 ];
+
+useHead({
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+
+        name: "Mckarekins Farms",
+        image: "https://mckarekinsfarm.ng/og-home.jpg",
+        url: "https://mckarekinsfarm.ng/",
+        telephone: "+234XXXXXXXXXX",
+        // 👉 replace with your real number
+
+        priceRange: "$$",
+
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Owu-Ikosi, Epe",
+          addressLocality: "Epe",
+          addressRegion: "Lagos State",
+          postalCode: "",
+          addressCountry: "NG",
+        },
+
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 6.5833,
+          longitude: 4.0167,
+        },
+
+        description:
+          "Mckarekins Farms is an integrated farm in Owu-Ikosi, Epe, Lagos specializing in fresh catfish, broiler chicken, eggs, cattle, goats, and cassava production. We provide chemical-free, sustainably raised farm produce.",
+
+        openingHours: "Mo-Sa 08:00-18:00",
+
+        sameAs: [
+          // Add your social links here if you have them
+          // "https://facebook.com/yourpage",
+          // "https://instagram.com/yourpage"
+        ],
+
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Farm Products",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Product", name: "Catfish" },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Product", name: "Broiler Chicken" },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Product", name: "Eggs" },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Product", name: "Goats" },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Product", name: "Cattle / Cows" },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: { "@type": "Product", name: "Cassava" },
+            },
+          ],
+        },
+      }),
+    },
+  ],
+});
 </script>
 
 <style>

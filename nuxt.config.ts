@@ -12,15 +12,19 @@ export default defineNuxtConfig({
   css: ["./styles/main.css"],
   app: {
     head: {
-      title: "Mckarekins Farms | Epe, Lagos",
+      title: "Mckarekins Farms Nigeria | Sustainable Agriculture in Epe, Lagos",
       meta: [
         {
           name: "description",
           content:
-            "Mckarekins Farms is a sustainable agriculture business located in Epe, Lagos, Nigeria. We are committed to producing safe, chemical-free food through integrated, sustainable farming while creating jobs, building skills, and strengthening the communities around us.",
+            "Mckarekins Farms is a sustainable agriculture business in Epe, Lagos, Nigeria. We sell and supply goats, catfish, cassava, cattle, and cows, providing fresh, chemical-free farm produce and livestock.",
+        },
+        {
+          name: "keywords",
+          content:
+            "Mckarekins Farms, goat farming Nigeria, catfish farm Lagos, cassava supply, cattle farming, cow export Nigeria, agriculture Epe Lagos",
         },
       ],
-      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
     },
   },
   site: {

@@ -444,44 +444,54 @@ import "swiper/css/free-mode";
 // ── SEO ──────────────────────────────────────────────────────────────────────
 useSeoMeta({
   title:
-    "Mckarekins Farms | Fresh Catfish, Poultry & Livestock — Owu-Ikosi, Lagos",
+    "Mckarekins Farms | Fresh Catfish, Poultry & Livestock — Owu-Ikosi, Epe Lagos",
+
   description:
-    "Mckarekins Farms is an 8-acre integrated farm in Owu-Ikosi, Epe, Lagos. We supply fresh catfish, broiler chicken, eggs, cattle, goats, and cassava — naturally raised, zero waste.",
+    "Mckarekins Farms is a 10-acre integrated farm in Owu-Ikosi, Epe, Lagos. We supply fresh catfish, broiler chicken, eggs, cattle, goats, and cassava — naturally raised, chemical-free, and sustainable.",
+
   ogTitle: "Mckarekins Farms — Fresh from the Farm to Your Table",
   ogDescription:
-    "Premium catfish, poultry, livestock, and cassava from our integrated farm in Owu-Ikosi, Lagos. Community-rooted. Chemical-free. Order today.",
+    "Premium catfish, poultry, livestock, and cassava from our integrated farm in Owu-Ikosi, Lagos. Chemical-free, community-rooted farming.",
+
   ogImage: "https://mckarekinsfarm.ng/og-home.jpg",
   ogUrl: "https://mckarekinsfarm.ng/",
   ogType: "website",
   ogSiteName: "Mckarekins Farms",
   ogLocale: "en_NG",
+
   twitterCard: "summary_large_image",
-  twitterTitle: "Mckarekins Farms | Lagos Farm — Catfish, Poultry & Livestock",
+  twitterTitle:
+    "Mckarekins Farms | Lagos Integrated Farm — Catfish, Poultry & Livestock",
   twitterDescription: "Fresh farm produce from Owu-Ikosi, Epe, Lagos.",
-  twitterImage: "https://mckarekinfarms.com/images/og-home.jpg",
+  twitterImage: "https://mckarekinsfarm.ng/og-home.jpg",
 });
 
 useHead({
-  link: [{ rel: "canonical", href: "https://mckarekinsfarm.ng" }],
-  meta: [
+  link: [
     {
-      name: "keywords",
-      content:
-        "catfish farm Lagos, buy fresh chicken Nigeria, livestock farm Epe Lagos, cassava farm Nigeria, fresh eggs Lagos, broiler chicken Owu-Ikosi, goat farm Lagos, Mckarekins Farms, farm fresh food Nigeria",
+      rel: "canonical",
+      href: "https://mckarekinsfarm.ng/",
     },
-    { name: "geo.region", content: "NG-LA" },
-    { name: "geo.placename", content: "Owu-Ikosi, Epe, Lagos State, Nigeria" },
-    { name: "geo.position", content: "6.5833;4.0167" },
-    { name: "ICBM", content: "6.5833, 4.0167" },
+  ],
+
+  meta: [
     {
       name: "robots",
       content:
         "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     },
-    { name: "author", content: "Mckarekins Farms" },
+    {
+      name: "author",
+      content: "Mckarekins Farms",
+    },
+
+    // Location signals (good for local SEO)
+    { name: "geo.region", content: "NG-LA" },
+    { name: "geo.placename", content: "Owu-Ikosi, Epe, Lagos State, Nigeria" },
+    { name: "geo.position", content: "6.5833;4.0167" },
+    { name: "ICBM", content: "6.5833, 4.0167" },
   ],
 });
-
 // ── Swiper ───────────────────────────────────────────────────────────────────
 const modules = [EffectFade, Autoplay, FreeMode];
 
