@@ -72,7 +72,7 @@
             <div class="space-y-4 text-secondary">
               <p>
                 Nestled in the heart of Owu-Ikosi, Epe, Lagos one of Nigeria's
-                most fertile farming belts. Mckarekins Farms was born from a
+                most fertile farming belts. Mckarekins Farm was born from a
                 simple but powerful conviction: that agriculture, done right,
                 doesn't just feed people. It builds communities, restores land,
                 and creates lasting prosperity.
@@ -85,7 +85,7 @@
                 build something right.
               </p>
               <p>
-                Today, Mckarekins Farms runs active catfish ponds, a thriving
+                Today, Mckarekins Farm runs active catfish ponds, a thriving
                 poultry unit with both broilers and layers, a cassava plantation
                 in full growth, and a livestock herd of cattle and goats all
                 managed with the same care and deliberateness that marked our
@@ -135,7 +135,7 @@
             Our Vision
           </p>
           <p class="text-lg leading-relaxed text-secondary">
-            We envision a future where Mckarekins Farms becomes the benchmark
+            We envision a future where Mckarekins Farm becomes the benchmark
             for sustainable, profitable agriculture in Nigeria — a model that
             other farmers, investors, and communities can look to and replicate
             across the region.
@@ -448,6 +448,22 @@ function openVideo(src) {
 function closeVideo() {
   activeVideo.value = null;
 }
+
+useSeoMeta({
+  title: "Our Story | Mckarekins Farm Nigeria",
+  description:
+    "Learn how Mckarekins Farm grew from a modest catfish pond into a fully integrated 10-acre farm in Owu-Ikosi, Epe, Lagos. Sustainable agriculture, real food, real purpose.",
+  ogTitle: "Rooted in Lagos. Grown with Purpose. | Mckarekins Farm",
+  ogDescription:
+    "From catfish ponds to cassava fields — discover the story behind Mckarekins Farm and our commitment to sustainable, chemical-free agriculture in Nigeria.",
+  ogImage: "/images/about.jpg",
+  ogUrl: "https://mckarekinsfarm.ng/about",
+  twitterCard: "summary_large_image",
+  twitterTitle: "Rooted in Lagos. Grown with Purpose. | Mckarekins Farm",
+  twitterDescription:
+    "A fully integrated farm in Owu-Ikosi, Epe, Lagos. Catfish, poultry, cassava, cattle and goats — raised clean, grown right.",
+  twitterImage: "/images/about.jpg",
+});
 </script>
 
 <style scoped>

@@ -239,7 +239,7 @@ useHead({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
 
-        name: "Mckarekins Farms",
+        name: "Mckarekins Farm",
         image: "https://mckarekinsfarm.ng/og-home.jpg",
         url: "https://mckarekinsfarm.ng/",
         telephone: "+234XXXXXXXXXX",
@@ -263,7 +263,7 @@ useHead({
         },
 
         description:
-          "Mckarekins Farms is an integrated farm in Owu-Ikosi, Epe, Lagos specializing in fresh catfish, broiler chicken, eggs, cattle, goats, and cassava production. We provide chemical-free, sustainably raised farm produce.",
+          "Mckarekins Farm is an integrated farm in Owu-Ikosi, Epe, Lagos specializing in fresh catfish, broiler chicken, eggs, cattle, goats, and cassava production. We provide chemical-free, sustainably raised farm produce.",
 
         openingHours: "Mo-Sa 08:00-18:00",
 

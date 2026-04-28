@@ -15,13 +15,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       title:
-        "Mckarekins Farms Nigeria | Sustainable Agriculture in Owu-Ikosi, Epe, Lagos",
+        "Mckarekins Farm Nigeria | Sustainable Agriculture in Owu-Ikosi, Epe, Lagos",
 
       meta: [
         {
           name: "description",
           content:
-            "Mckarekins Farms is an integrated agricultural farm in Owu-Ikosi, Epe, Lagos. We produce and supply fresh catfish, broiler chicken, eggs, goats, cattle, and cassava — chemical-free and sustainably raised.",
+            "Mckarekins Farm is an integrated agricultural farm in Owu-Ikosi, Epe, Lagos. We produce and supply fresh catfish, broiler chicken, eggs, goats, cattle, and cassava — chemical-free and sustainably raised.",
         },
         {
           name: "robots",

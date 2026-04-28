@@ -140,22 +140,22 @@ import { ref, computed } from "vue";
 // ✅ SEO
 useHead({
   title:
-    "Buy Fresh Catfish, Chicken, Eggs & Livestock in Lagos | Mckarekins Farms",
+    "Buy Fresh Catfish, Chicken, Eggs & Livestock in Lagos | Mckarekins Farm",
   meta: [
     {
       name: "description",
       content:
-        "Buy fresh catfish, broiler chicken, eggs, beef cattle, goats and cassava direct from Mckarekins Farms in Owu-Ikosi, Epe, Lagos. Hormone-free, naturally raised. Bulk orders welcome.",
+        "Buy fresh catfish, broiler chicken, eggs, beef cattle, goats and cassava direct from Mckarekins Farm in Owu-Ikosi, Epe, Lagos. Hormone-free, naturally raised. Bulk orders welcome.",
     },
     {
       name: "keywords",
       content:
-        "buy live catfish Lagos, fresh broiler chicken Epe, farm eggs Lagos, goat for sale Lagos, beef cattle bulk order Nigeria, cassava farm Lagos, fresh farm produce Owu-Ikosi, Mckarekins Farms products",
+        "buy live catfish Lagos, fresh broiler chicken Epe, farm eggs Lagos, goat for sale Lagos, beef cattle bulk order Nigeria, cassava farm Lagos, fresh farm produce Owu-Ikosi, Mckarekins Farm products",
     },
     // Open Graph
     {
       property: "og:title",
-      content: "Fresh Farm Products | Mckarekins Farms — Lagos",
+      content: "Fresh Farm Products | Mckarekins Farm — Lagos",
     },
     {
       property: "og:description",
@@ -168,13 +168,13 @@ useHead({
       property: "og:image",
       content: "https://mckarekinsfarm.ng/images/og-products.jpg",
     },
-    { property: "og:site_name", content: "Mckarekins Farms" },
+    { property: "og:site_name", content: "Mckarekins Farm" },
     { property: "og:locale", content: "en_NG" },
     // Twitter
     { name: "twitter:card", content: "summary_large_image" },
     {
       name: "twitter:title",
-      content: "Fresh Farm Products | Mckarekins Farms — Lagos",
+      content: "Fresh Farm Products | Mckarekins Farm — Lagos",
     },
     {
       name: "twitter:description",
@@ -187,7 +187,7 @@ useHead({
     },
     // Extras
     { name: "robots", content: "index, follow" },
-    { name: "author", content: "Mckarekins Farms" },
+    { name: "author", content: "Mckarekins Farm" },
   ],
   link: [{ rel: "canonical", href: "https://mckarekinsfarm.ng/services" }],
   script: [
@@ -196,10 +196,10 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "ItemList",
-        name: "Farm Products — Mckarekins Farms",
+        name: "Farm Products — Mckarekins Farm",
         url: "https://mckarekinsfarm.ng/services",
         description:
-          "Fresh farm products available from Mckarekins Farms, Owu-Ikosi, Epe, Lagos.",
+          "Fresh farm products available from Mckarekins Farm, Owu-Ikosi, Epe, Lagos.",
         itemListElement: [
           {
             "@type": "ListItem",
@@ -209,11 +209,11 @@ useHead({
               name: "Live Catfish",
               description:
                 "Farm-raised freshwater catfish. Available live or freshly dressed to order. Hormone-free, daily harvest.",
-              brand: { "@type": "Brand", name: "Mckarekins Farms" },
+              brand: { "@type": "Brand", name: "Mckarekins Farm" },
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                seller: { "@type": "Organization", name: "Mckarekins Farms" },
+                seller: { "@type": "Organization", name: "Mckarekins Farm" },
                 areaServed: "Lagos, Nigeria",
                 url: "https://mckarekinsfarm.ng/contact",
               },
@@ -227,11 +227,11 @@ useHead({
               name: "Broiler Chicken",
               description:
                 "Free-range broiler chickens. Pasture-fed, no antibiotics, no growth hormones.",
-              brand: { "@type": "Brand", name: "Mckarekins Farms" },
+              brand: { "@type": "Brand", name: "Mckarekins Farm" },
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                seller: { "@type": "Organization", name: "Mckarekins Farms" },
+                seller: { "@type": "Organization", name: "Mckarekins Farm" },
                 areaServed: "Lagos, Nigeria",
                 url: "https://mckarekinsfarm.ng/contact",
               },
@@ -245,11 +245,11 @@ useHead({
               name: "Fresh Eggs",
               description:
                 "Farm-fresh eggs collected daily from layer hens. Rich golden yolk, full nutrition.",
-              brand: { "@type": "Brand", name: "Mckarekins Farms" },
+              brand: { "@type": "Brand", name: "Mckarekins Farm" },
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                seller: { "@type": "Organization", name: "Mckarekins Farms" },
+                seller: { "@type": "Organization", name: "Mckarekins Farm" },
                 areaServed: "Lagos, Nigeria",
                 url: "https://mckarekinsfarm.ng/contact",
               },
@@ -263,11 +263,11 @@ useHead({
               name: "Beef Cattle",
               description:
                 "Grass-fed cattle raised on open pasture. Available for bulk and festive season orders.",
-              brand: { "@type": "Brand", name: "Mckarekins Farms" },
+              brand: { "@type": "Brand", name: "Mckarekins Farm" },
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                seller: { "@type": "Organization", name: "Mckarekins Farms" },
+                seller: { "@type": "Organization", name: "Mckarekins Farm" },
                 areaServed: "Lagos, Nigeria",
                 url: "https://mckarekinsfarm.ng/contact",
               },
@@ -281,11 +281,11 @@ useHead({
               name: "Goats",
               description:
                 "Healthy farm-bred goats. Ideal for festive seasons, ceremonies and market supply. No hormones.",
-              brand: { "@type": "Brand", name: "Mckarekins Farms" },
+              brand: { "@type": "Brand", name: "Mckarekins Farm" },
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                seller: { "@type": "Organization", name: "Mckarekins Farms" },
+                seller: { "@type": "Organization", name: "Mckarekins Farm" },
                 areaServed: "Lagos, Nigeria",
                 url: "https://mckarekinsfarm.ng/contact",
               },
@@ -299,11 +299,11 @@ useHead({
               name: "Cassava",
               description:
                 "High-yield organic cassava grown with poultry manure compost. Non-GMO, pesticide-free.",
-              brand: { "@type": "Brand", name: "Mckarekins Farms" },
+              brand: { "@type": "Brand", name: "Mckarekins Farm" },
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                seller: { "@type": "Organization", name: "Mckarekins Farms" },
+                seller: { "@type": "Organization", name: "Mckarekins Farm" },
                 areaServed: "Lagos, Nigeria",
                 url: "https://mckarekinsfarm.ng/contact",
               },

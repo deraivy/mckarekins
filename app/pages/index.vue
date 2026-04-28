@@ -193,7 +193,7 @@
         <div class="relative rounded-2xl overflow-hidden group">
           <NuxtImg
             src="/images/cassavaw.jpg"
-            alt="Cassava field at Mckarekins Farms, Owu-Ikosi, Epe, Lagos"
+            alt="Cassava field at Mckarekins Farm, Owu-Ikosi, Epe, Lagos"
             sizes="sm:100vw md:50vw lg:40vw"
             format="webp"
             quality="75"
@@ -219,7 +219,7 @@
           <div class="space-y-4 text-secondary">
             <p class="">
               Born in the heart of Owu-Ikosi, Epe, Lagos, one of Nigeria's most
-              fertile farming belts, Mckarekins Farms stands on a simple but
+              fertile farming belts, Mckarekins Farm stands on a simple but
               powerful conviction: that agriculture, done right, doesn't just
               feed people. It builds communities, restores land, and creates
               lasting prosperity.
@@ -444,24 +444,25 @@ import "swiper/css/free-mode";
 // ── SEO ──────────────────────────────────────────────────────────────────────
 useSeoMeta({
   title:
-    "Mckarekins Farms | Fresh Catfish, Poultry & Livestock — Owu-Ikosi, Epe Lagos",
+    "Mckarekins Farm | Fresh Catfish, Poultry & Livestock — Owu-Ikosi, Epe Lagos",
 
   description:
-    "Mckarekins Farms is a 10-acre integrated farm in Owu-Ikosi, Epe, Lagos. We supply fresh catfish, broiler chicken, eggs, cattle, goats, and cassava — naturally raised, chemical-free, and sustainable.",
+    "Mckarekins Farm is a 10-acre integrated farm in Owu-Ikosi, Epe, Lagos. We supply fresh catfish, broiler chicken, eggs, cattle, goats, and cassava — naturally raised, chemical-free, and sustainable.",
 
-  ogTitle: "Mckarekins Farms — Fresh from the Farm to Your Table",
+  ogTitle:
+    "Mckarekins Farm | Catfish, Goats, Livestock & Cassava Farm in Epe, Lagos",
   ogDescription:
     "Premium catfish, poultry, livestock, and cassava from our integrated farm in Owu-Ikosi, Lagos. Chemical-free, community-rooted farming.",
 
   ogImage: "https://mckarekinsfarm.ng/og-home.jpg",
   ogUrl: "https://mckarekinsfarm.ng/",
   ogType: "website",
-  ogSiteName: "Mckarekins Farms",
+  ogSiteName: "Mckarekins Farm",
   ogLocale: "en_NG",
 
   twitterCard: "summary_large_image",
   twitterTitle:
-    "Mckarekins Farms | Lagos Integrated Farm — Catfish, Poultry & Livestock",
+    "Mckarekins Farm | Lagos Integrated Farm — Catfish, Poultry & Livestock",
   twitterDescription: "Fresh farm produce from Owu-Ikosi, Epe, Lagos.",
   twitterImage: "https://mckarekinsfarm.ng/og-home.jpg",
 });
@@ -482,7 +483,7 @@ useHead({
     },
     {
       name: "author",
-      content: "Mckarekins Farms",
+      content: "Mckarekins Farm",
     },
 
     // Location signals (good for local SEO)
@@ -498,25 +499,25 @@ const modules = [EffectFade, Autoplay, FreeMode];
 const slides = [
   {
     image: "/images/chicken.jpg",
-    alt: "Free-range chickens grazing on lush green pasture at Mckarekins Farms",
+    alt: "Free-range chickens grazing on lush green pasture at Mckarekins Farm",
     sector: "Poultry",
     title: "Chicken",
   },
   {
     image: "/images/catfish.jpg",
-    alt: "Fresh catfish in sustainable aquaculture ponds at Mckarekins Farms",
+    alt: "Fresh catfish in sustainable aquaculture ponds at Mckarekins Farm",
     sector: "Aquaculture",
     title: "Catfish",
   },
   {
     image: "/images/ram.jpg",
-    alt: "Healthy ram raised on open pasture at Mckarekins Farms, Owu-Ikosi Lagos",
+    alt: "Healthy ram raised on open pasture at Mckarekins Farm, Owu-Ikosi Lagos",
     sector: "Livestock",
     title: "Ram",
   },
   {
     image: "/images/cassava.jpg",
-    alt: "High-yield cassava roots harvested from fertile farmland at Mckarekins Farms",
+    alt: "High-yield cassava roots harvested from fertile farmland at Mckarekins Farm",
     sector: "Crops",
     title: " Cassava",
   },
@@ -726,7 +727,7 @@ const pillars = [
 const testimonials = [
   {
     quote:
-      "Mckarekins Farms supplied our restaurant with fresh catfish every week for two years. The quality is unmatched and delivery is always on time. Highly recommend!",
+      "Mckarekins Farm supplied our restaurant with fresh catfish every week for two years. The quality is unmatched and delivery is always on time. Highly recommend!",
     name: "Chukwuemeka O.",
     role: "Restaurant Owner, Lagos",
     initials: "CO",
@@ -740,7 +741,7 @@ const testimonials = [
   },
   {
     quote:
-      "We source all our cassava tubers and garri from Mckarekins Farms. Their bulk pricing is fair and the produce is always clean and fresh. Great partnership!",
+      "We source all our cassava tubers and garri from Mckarekins Farm. Their bulk pricing is fair and the produce is always clean and fresh. Great partnership!",
     name: "Babatunde A.",
     role: "Food Distributor, Ibadan",
     initials: "BA",

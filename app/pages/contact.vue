@@ -282,6 +282,22 @@
 import { ref } from "vue";
 import emailjs from "emailjs-com";
 
+useSeoMeta({
+  title: "Contact Us | Mckarekins Farm Nigeria",
+  description:
+    "Get in touch with Mckarekins Farm. Buy fresh catfish, broiler chicken, eggs, goats, cattle or cassava directly from our farm in Owu-Ikosi, Epe, Lagos.",
+  ogTitle: "Contact Mckarekins Farm | Owu-Ikosi, Epe, Lagos",
+  ogDescription:
+    "Reach out to us for bulk orders, farm partnerships, or general enquiries. We respond within 24 hours.",
+  ogImage: "/images/about.jpg",
+  ogUrl: "https://mckarekinsfarm.ng/contact",
+  twitterCard: "summary_large_image",
+  twitterTitle: "Contact Mckarekins Farm",
+  twitterDescription:
+    "Fresh produce direct from our farm in Epe, Lagos. Reach out for orders, partnerships or farm tours.",
+  twitterImage: "/images/about.jpg",
+});
+
 const submitted = ref(false);
 const sending = ref(false);
 const error = ref(false);
