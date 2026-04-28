@@ -27,6 +27,14 @@ export default defineNuxtConfig({
           name: "robots",
           content: "index, follow",
         },
+        {
+          name: "google-site-verification",
+          content: "YOUR_CODE_HERE",
+        },
+      ],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "canonical", href: "https://mckarekinsfarm.ng" },
       ],
     },
   },
