@@ -14,7 +14,8 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Mckarekins Farms Nigeria | Sustainable Agriculture in Epe, Lagos",
+      title:
+        "Mckarekins Farms Nigeria | Sustainable Agriculture in Owu-Ikosi, Epe, Lagos",
 
       meta: [
         {
